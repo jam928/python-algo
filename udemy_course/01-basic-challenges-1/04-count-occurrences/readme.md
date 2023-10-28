@@ -3,25 +3,29 @@
 
 ## Instructions
 
-Write a function called `countOccurrences()` that takes in a string and a character and returns the number of occurrences of that character in the string.
+Write a function called `count_occurrences()` that takes in a string and a character and returns the number of occurrences of that character in the string.
 
 ### Function Signature
 
-```js
-/**
- * Returns the number of occurrences of a character in a string.
- * @param {string} str - The string to search.
- * @param {string} char - The character to search for.
- * @returns {number} - The number of occurrences of the character in the string.
- */
-function countOccurrences(str: string, char: string): number;
+```python
+def count_occurrences(str: str, char: str) -> int:
+    """
+    Returns the number of occurrences of a character in a string.
+
+    Parameters:
+    - str (str): The string to search.
+    - char (str): The character to search for.
+
+    Returns:
+    - int: The number of occurrences of the character in the string.
+    """
 ```
 
 ### Examples
 
-```js
-countOccurrences('hello', 'l'); // 2
-countOccurrences('hello', 'z'); // 0
+```python
+count_occurrences('hello', 'l') # 2
+count_occurrences('hello', 'z') # 0
 ```
 
 ### Constraints
@@ -39,35 +43,15 @@ countOccurrences('hello', 'z'); // 0
 <details>
   <summary>Click For Solution 1</summary>
 
-```JavaScript
-function countOccurrences(str, char) {
-  let count = 0;
+```python
+def count(word, letter):
+    letter_count = 0
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === char) {
-      count++;
-    }
-  }
+    for c in word:
+        if c == letter:
+            letter_count += 1
 
-  return count;
-}
-
-// Case insensitive version
-// function countOccurrences(str, char) {
-//   const lowerStr = str.toLowerCase();
-//   const lowerChar = char.toLowerCase();
-
-//   let count = 0;
-
-//   for (let i = 0; i < lowerStr.length; i++) {
-//     if (lowerStr[i] === lowerChar) {
-//       count++;
-//     }
-//   }
-
-//   return count;
-// }
-
+    return letter_count
 ```
 
 ### Explanation
@@ -85,8 +69,9 @@ function countOccurrences(str, char) {
 <details>
   <summary>Click For Solution 2</summary>
 
-```JavaScript
-const countOccurrences = (str, char) => str.split(char).length - 1;
+```python
+def count_2(word, letter):
+    return len(word.split(letter)) - 1
 ```
 
 ### Explanation
@@ -101,10 +86,13 @@ This solution may be prettier, but it actually is not as efficient as the loop. 
 
 ### Test Cases
 
-```js
-test('Count Occurrences of a Character', () => {
-  expect(countOccurrences('hello', 'l')).toBe(2);
-  expect(countOccurrences('programming', 'm')).toBe(2);
-  expect(countOccurrences('banana', 'a')).toBe(3);
-});
+```python
+import count_occurrences
+
+
+def test_count_occurrences_of_a_character():
+    assert count_occurrences.count("hello", "l") == 2
+    assert count_occurrences.count("programming", "m") == 2
+    assert count_occurrences.count("banana", "a") == 3
+
 ```

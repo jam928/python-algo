@@ -6,24 +6,28 @@ Write a function called `calculator` that takes in 2 numbers and an operator and
 
 ### Function Signature
 
-```js
-/**
- * Returns the result of a calculation.
- * @param {number} num1 - The first number.
- * @param {number} num2 - The second number.
- * @param {string} operator - The operator to use in the calculation.
- * @returns {number} - The result of the calculation.
- */
-function calculator(num1: number, num2: number, operator: string): number;
+```python
+def calculator(num1: float, num2: float, operator: str) -> float:
+    """
+    Returns the result of a calculation.
+
+    Parameters:
+    - num1 (float): The first number.
+    - num2 (float): The second number.
+    - operator (str): The operator to use in the calculation.
+
+    Returns:
+    - float: The result of the calculation.
+    """
 ```
 
 ### Examples
 
-```JS
-calculator(1, 2, '+') // 3
-calculator(10, 5, '-') // 5
-calculator(2, 2, '*') // 4
-calculator(10, 5, '/') // 2
+```python
+calculator(1, 2, '+') # 3
+calculator(10, 5, '-') # 5
+calculator(2, 2, '*') # 4
+calculator(10, 5, '/') # 2
 ```
 
 ### Constraints
@@ -38,71 +42,34 @@ calculator(10, 5, '/') // 2
 ## Solutions
 
 <details>
-  <summary>Click For Solution 1</summary>
-
-#### Using a switch:
-
-```js
-function calculator(num1, num2, operator) {
-  let result;
-
-  switch (operator) {
-    case '+':
-      result = num1 + num2;
-      break;
-    case '-':
-      result = num1 - num2;
-      break;
-    case '*':
-      result = num1 * num2;
-      break;
-    case '/':
-      result = num1 / num2;
-      break;
-    default:
-      throw new Error('Invalid operator');
-  }
-
-  return result;
-}
-```
-
-### Explanation
-
-- Created a function called `calculator` that takes in three arguments: `num1`, `num2`, and `operator`.
-- Create a variable called `result` to store the result of the calculation.
-- Used a `switch` statement to determine which operator was given. If it was +, -, \* or /, we did the calculation. If the operator is anything else, we throw an error.
-
-</details>
-
-<details>
- <summary>Click For Solution 2</summary>
+ <summary>Click For Solution 1</summary>
 
 #### Using an if statement:
 
-```js
-function calculator(num1, num2, operator) {
-  let result;
+```python
+def calculate(num1, num2, operator):
+    # Declare a variable to store the result
+    result = None
 
-  if (operator === '+') {
-    result = num1 + num2;
-  } else if (operator === '-') {
-    result = num1 - num2;
-  } else if (operator === '*') {
-    result = num1 * num2;
-  } else if (operator === '/') {
-    result = num1 / num2;
-  } else {
-    throw new Error('Invalid operator');
-  }
+    # Use if/elif/else statements to determine which operation to perform
+    if operator == '+':
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
+    elif operator == '/':
+        result = num1 / num2
+    else:
+        # If the operator is not one of the above, raise an error
+        raise ValueError('Invalid operator')
 
-  return result;
-}
+    return result
 ```
 
 ### Explanation
 
-- Create a function called `calculator` that takes in three arguments: `num1`, `num2`, and `operator`.
+- Create a function called `calculate` that takes in three arguments: `num1`, `num2`, and `operator`.
 - Create a variable called `result` to store the result of the calculation.
 - Use an `if` statement to determine which operator was given. If it was +, -, \* or /, we did the calculation. If the operator is anything else, we throw an error.
 
@@ -110,25 +77,16 @@ function calculator(num1, num2, operator) {
 
 ### Test Cases
 
-```js
-test('Performing arithmetic operations using the calculator function', () => {
-  // Test case inputs
-  const num1 = 5;
-  const num2 = 7;
+```python
+import calculator
+import pytest
 
-  // Addition
-  expect(calculator(num1, num2, '+')).toBe(12);
+def test_perform_calculator_operations():
+    num1 = 5
+    num2 = 7
 
-  // Subtraction
-  expect(calculator(num1, num2, '-')).toBe(-2);
-
-  // Multiplication
-  expect(calculator(num1, num2, '*')).toBe(35);
-
-  // Division
-  expect(calculator(num1, num2, '/')).toBeCloseTo(0.7143, 4);
-
-  // Invalid operator
-  expect(() => calculator(num1, num2, '^')).toThrow('Invalid operator');
-});
+    assert calculator.calculate(num1, num2, '+') == 12
+    assert calculator.calculate(num1, num2, '-') == -2
+    assert calculator.calculate(num1, num2, '*') == 35
+    assert calculator.calculate(num1, num2, '/') == 0.7142857142857143
 ```
