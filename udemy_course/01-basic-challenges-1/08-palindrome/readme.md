@@ -4,17 +4,28 @@ A palindrome is a word, phrase, number, or other sequence of characters which re
 
 ## Instructions
 
-Write a function called `isPalindrome` that takes in a string and returns `true` if the string is a palindrome and `false` if it is not.
+Write a function called `is_palindrome` that takes in a string and returns `true` if the string is a palindrome and `false` if it is not.
 
 ### Function Signature
 
-```js
+```python
 /**
  * Returns true if the string is a palindrome.
  * @param {string} str - The string to check.
  * @returns {boolean} - True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(str: string): boolean;
+
+def is_palindrome(str: str) -> boolean:
+    """
+    Returns true if the string is a palindrome.
+    
+    Parameters:
+    - str (str): The string to check.
+    
+    Returns:
+    - boolean: True if the string is a palindrome, false otherwise.
+    """
 ```
 
 ### Examples

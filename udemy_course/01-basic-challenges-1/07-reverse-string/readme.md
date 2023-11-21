@@ -6,21 +6,25 @@ Write a function called `reverseString` that takes in a string and returns the r
 
 ### Function Signature
 
-```js
-/**
- * Returns the reverse of a string.
- * @param {string} str - The string to reverse.
- * @returns {string} - The reverse of the string.
- */
-function reverseString(str: string): string;
+```python
+def reverse_string(str: str) -> str:
+    """
+    Returns the reverse of a string.
+    
+    Parameters:
+    - str (str): The string to reverse.
+    
+    Returns:
+    - str: The reverse of the string.
+    """
 ```
 
 ### Examples
 
-```JS
-reverseString('hello') // 'olleh'
-reverseString('world') // 'dlrow'
-reverseString('') // ''
+```python
+reverse_string('hello') # 'olleh'
+revers_string('world') # 'dlrow'
+reverse_string('') # ''
 ```
 
 ### Constraints
@@ -39,16 +43,14 @@ reverseString('') // ''
 
 This solution uses a for loop to reverse the string.
 
-```js
-function reverseString(str) {
-  let reversed = '';
+```python
+def reverse_string(str):
+    reverse_str = ""
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-  }
+    for i in range(len(str) - 1, -1, -1):
+        reverse_str += str[i]
 
-  return reversed;
-}
+    return reverse_str
 ```
 
 ## Explanation
@@ -65,31 +67,30 @@ function reverseString(str) {
 
 This solution uses built-in methods to reverse the string.
 
-```js
-function reverseString(str) {
-  return str.split('').reverse().join('');
-}
+```python
+def reverse_string(str):
+    return str[::-1]
 ```
 
 ### Explanation
 
-We created a function called `reverseString` that takes in a string called `str`. We then return the result of chaining the `split`, `reverse`, and `join` methods on `str`.
+str: This is the string variable or literal that you want to reverse.
 
-The `split` function takes in a string and turns it into an array. We passed in an empty string as an argument to `split` so that it will split the string into an array of characters.(["h", "e", "l", "l", "o"])
+[::-1]: This is the slice notation. The general syntax for a slice is start:stop:step, and all three parts are optional.
 
-The `reverse` function takes in an array and reverses it. (["o", "l", "l", "e", "h"])
+In this case, start is not specified, so it defaults to the beginning of the string.
 
-The `join` function takes in an array and turns it into a string. We passed in an empty string as an argument to `join` so that it will join the array of characters into a string. ('olleh')
+stop is not specified, so it defaults to the end of the string.
+
+step is specified as -1, which means it will iterate the string with a step of -1, effectively reversing the string.
 
 </details>
 
 ### Test Cases
 
-```JS
-test('Reversing a string', () => {
-  expect(reverseString('Hello')).toBe('olleH');
-  expect(reverseString('JavaScript')).toBe('tpircSavaJ');
-  expect(reverseString('12345')).toBe('54321');
-});
-
+```python
+def test_reverse_string():
+    assert rs.reverse_string("Hello") == 'olleH'
+    assert rs.reverse_string("JavaScript") == 'tpircSavaJ'
+    assert rs.reverse_string("12345") == '54321'
 ```
