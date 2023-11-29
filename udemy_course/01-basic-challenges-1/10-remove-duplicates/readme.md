@@ -2,25 +2,30 @@
 
 ## Instructions
 
-Write a function called `removeDuplicates` that takes in an array and returns a new array with duplicates removed.
+Write a function called `remove_duplicates` that takes in an array and returns a new array with duplicates removed.
 
 ### Function Signature
 
-```js
-/**
- * Returns a new array with duplicates removed.
- * @param {any[]} arr - The array to remove duplicates from.
- * @returns {any[]} - The new array with duplicates removed.
- */
-function removeDuplicates(arr: any[]): any[];
+```python
+def remove_duplicates(arr: []) -> []:
+    """
+    Returns a new array with duplicates removed.
+    
+    Parameters:
+    - [] (any[]): The array to remove duplicates from.
+    
+    Returns:
+    - any[]: The new array with duplicates removed.
+    """
 ```
+
 
 ### Examples
 
-```js
-removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-removeDuplicates([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]); // [1]
-removeDuplicates([1, 2, 3, 4, 5, true, 1, 'hello' 2, 3, 'hello', true]); // [1, 2, 3, 4, 5, true, 'hello']
+```python
+remove_duplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+remove_duplicates([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) # [1]
+remove_duplicates([1, 2, 3, 4, 5, true, 1, 'hello' 2, 3, 'hello', true]) # [1, 2, 3, 4, 5, true, 'hello']
 ```
 
 ### Constraints
@@ -38,59 +43,51 @@ removeDuplicates([1, 2, 3, 4, 5, true, 1, 'hello' 2, 3, 'hello', true]); // [1, 
 
 Using a for loop
 
-```js
-function removeDuplicates(arr) {
-  const uniqueArr = [];
+```python
+def remove_duplicates(arr):
+    unique_arr = []
 
-  for (let i = 0; i < arr.length; i++) {
-    if (!uniqueArr.includes(arr[i])) {
-      uniqueArr.push(arr[i]);
-    }
-  }
+    s = set()
+    boolean_set = set()
 
-  return uniqueArr;
-}
+    for e in arr:
+        if isinstance(e, bool) and e not in boolean_set:
+            boolean_set.add(e)
+            unique_arr.append(e)
+        elif not isinstance(e, bool) and e not in s:
+            unique_arr.append(e)
+            s.add(e)
+
+    return unique_arr
 ```
 
 ### Explanation
 
-- Create a new array called `uniqueArr`.
-- Create a `for` loop that will loop through each element in the array and check if the current element is in `uniqueArr`.
-- If it is not, we push it into `uniqueArr`.
-- Once we have looped through the entire array, we return `uniqueArr`.
-
-</details>
-
-<details>
-  <summary>Click For Solution 2</summary>
-
-Using a Set
-
-```js
-function removeDuplicates(arr) {
-  return Array.from(new Set(arr));
-}
-```
-
-### Explanation
-
-This solution is extremely simple. We take in an array with duplicates and we create a new `Set` from that array. We then convert that `Set` back into an array and return it.
-
-The reason that this works is because a `Set` can only contain unique values. So when we create a `Set` from an array, it will remove all the duplicates automatically.
+- Create a new array called `unique_arr`.
+- Create two sets
+  - One for boolean values since boolean values is stored as 1 and 0s in python
+  - and the other set for the rest of the elements
+- Create a `for` loop that will loop through each element in the array.
+  - If the element is a boolean and hasn't been added to the boolean set
+    - add to the boolean set
+    - add to the new array
+  - else if the element is not a boolean and the element is not in the set
+    - add it to the array
+    - add to the other set
+- Once we have looped through the entire array, we return `unique_arr`.
 
 </details>
 
 ### Test Cases
 
-```js
-test('Removing duplicates from an array', () => {
-  expect(removeDuplicates([1, 2, 3, 2, 4, 1, 5])).toEqual([1, 2, 3, 4, 5]);
-  expect(
-    removeDuplicates(['apple', 'banana', 'orange', 'banana', 'kiwi'])
-  ).toEqual(['apple', 'banana', 'orange', 'kiwi']);
-  expect(removeDuplicates([true, true, false, true, false])).toEqual([
-    true,
-    false,
-  ]);
-});
+```python
+import remove_duplicates as rd
+
+
+def test_remove_duplicates_from_array():
+    assert rd.remove_duplicates([1, 2, 3, 2, 4, 1, 5]) == [1, 2, 3, 4, 5]
+    assert rd.remove_duplicates(['apple', 'banana', 'orange', 'banana', 'kiwi']) == ['apple', 'banana', 'orange',
+                                                                                     'kiwi']
+    assert rd.remove_duplicates([True, True, False, True, False]) == [True, False]
+
 ```

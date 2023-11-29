@@ -2,25 +2,29 @@
 
 ## Instructions
 
-Write a function called `countVowels` that takes in a string and returns the number of vowels in the string.
+Write a function called `count_vowels` that takes in a string and returns the number of vowels in the string.
 
 ### Function Signature
 
-```js
-/**
- * Returns the number of vowels in a string.
- * @param {string} str - The string to search.
- * @returns {number} - The number of vowels in the string.
- */
-function countVowels(str: string): number;
+```python
+def count_vowels(str: str) -> int:
+    """
+    Returns the number of vowels in a string.
+    
+    Parameters:
+    - str (str): The string to check.
+    
+    Returns:
+    - int: The number of vowels in the string.
+    """
 ```
 
 ### Examples
 
-```js
-countVowels('hello'); // 2
-countVowels('why'); // 0
-countVowels('mississippi'); // 4
+```python
+count_vowels('hello') # 2
+count_vowels('why') # 0
+count_vowels('mississippi') # 4
 ```
 
 ### Constraints
@@ -35,45 +39,36 @@ countVowels('mississippi'); // 4
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function countVowels(str) {
-  const formattedStr = str.toLowerCase();
-  let count = 0;
+```python
+def count_vowels(s):
+    vowel_str = "aeiouAEIOU"
+    s = s.lower()
+    vowel_count = 0
+    for c in s:
+        if c in vowel_str:
+            vowel_count = vowel_count + 1
 
-  for (let i = 0; i < formattedStr.length; i++) {
-    const char = formattedStr[i];
-
-    if (
-      char === 'a' ||
-      char === 'e' ||
-      char === 'i' ||
-      char === 'o' ||
-      char === 'u'
-    ) {
-      count++;
-    }
-  }
-
-  return count;
-}
+    return vowel_count
 ```
 
 ## Explanation
 
 - Make the string lowercase. This is because we want to count both uppercase and lowercase vowels.
-- Create a variable called `count` and set it to `0`. This is the variable we will use to keep track of how many vowels we have found.
-- Create a `for` loop that will loop through each character in the string. We then create a variable called `char` and set it to the current character in the string.
-- Check if the character is a vowel. If it is, we increment `count` by `1`. Once we have looped through the entire string, we return `count`.
+- Create a variable called `vowel_count` and set it to `0`. This is the variable we will use to keep track of how many vowels we have found.
+- Create a `for` loop that will loop through each character in the string. 
+- Check if the character in the vowel str. If it is, we increment `vowel_count` by `1`. Once we have looped through the entire string, we return `vowel_count`.
 
 </details>
 
 ### Test Cases
 
-```js
-test('Counting vowels in a string', () => {
-  expect(countVowels('Hello, World!')).toBe(3);
-  expect(countVowels('JavaScript')).toBe(3);
-  expect(countVowels('OpenAI Chatbot')).toBe(6);
-  expect(countVowels('Coding Challenge')).toBe(5);
-});
+```python
+import count_vowels as cv
+
+def test_count_vowels_in_str():
+    assert cv.count_vowels("Hello World!") == 3
+    assert cv.count_vowels("JavaScript") == 3
+    assert cv.count_vowels("OpenAI Chatbot") == 6
+    assert cv.count_vowels("Coding Challenge") == 5
+
 ```
