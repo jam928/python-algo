@@ -15,7 +15,7 @@ def remove_duplicates(arr: []) -> []:
     - [] (any[]): The array to remove duplicates from.
     
     Returns:
-    - any[]: The new array with duplicates removed.
+    - any[]: The=new array with duplicates removed.
     """
 ```
 

@@ -2,26 +2,34 @@
 
 ## Instructions
 
-Write a function called `arrayIntersection` that takes in two arrays and returns an array containing the intersection of the two input arrays (i.e., the common elements that appear in both arrays).
+Write a function called `array_intersection` that takes in two arrays and returns an array containing the intersection of the two input arrays (i.e., the common elements that appear in both arrays).
 
 ### Function Signature
 
-```js
-/**
- * Returns the intersection of two arrays.
- * @param {number[]} arr1 - The first array.
- * @param {number[]} arr2 - The second array.
- * @returns {number[]} - The intersection of the two arrays.
- */
-function arrayIntersection(arr1: number[], arr2: number[]): number[];
+```python
+from typing import List
+
+def array_intersection(arr1: List[int], arr2: List[int]) -> List[int]:
+    """
+    Returns the intersection of two arrays.
+    
+    Parameters:
+    - arr1 (List[int]): The first array.
+    - arr2 (List[int]): The second array.
+    
+    Returns:
+    - List[int]: The intersection of the two arrays.
+    """
+    # Your function logic here
+    pass
 ```
 
 ### Examples
 
-```js
-arrayIntersection([1, 2, 3, 4, 5], [1, 3, 5, 7, 9]); // should return [1, 3, 5]
-arrayIntersection([1, 1, 1, 1, 1], [2, 2, 2, 2, 2]); // should return []
-arrayIntersection([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]); // should return [1, 2, 3, 4, 5]
+```python
+array_intersection([1, 2, 3, 4, 5], [1, 3, 5, 7, 9]); # should return [1, 3, 5]
+array_intersection([1, 1, 1, 1, 1], [2, 2, 2, 2, 2]); # should return []
+array_intersection([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]); # should return [1, 2, 3, 4, 5]
 ```
 
 ### Constraints
@@ -39,18 +47,15 @@ arrayIntersection([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]); // should return [1, 2, 3, 
 <details>
   <summary>Click For Solution 1</summary>
 
-```js
-function arrayIntersection(arr1, arr2) {
-  const intersection = [];
+```python
+def array_intersection(arr1, arr2):
+    intersection = []
 
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr2.includes(arr1[i]) && !intersection.includes(arr1[i])) {
-      intersection.push(arr1[i]);
-    }
-  }
+    for element in arr1:
+        if element in arr2 and element not in intersection:
+            intersection.append(element)
 
-  return intersection;
-}
+    return intersection
 ```
 
 ### Explanation
@@ -61,6 +66,8 @@ function arrayIntersection(arr1, arr2) {
 - If it is not, push it into the intersection array
 - Return the intersection array
 
+Time: O(n+m)
+Space: O(1)
 </details>
 
 <details>
@@ -68,38 +75,41 @@ function arrayIntersection(arr1, arr2) {
 
 In this solution, we will use a Set. A Set is a data structure that stores unique values. We will have a section on maps, sets later. If you are not familiar with sets, that is fine. You can still follow along with this solution.
 
-```js
-function arrayIntersection(arr1, arr2) {
-  const set1 = new Set(arr1);
-  const intersection = [];
+```python
+def array_intersection(arr1, arr2):
+    s = set()
 
-  for (let num of arr2) {
-    if (set1.has(num)) {
-      intersection.push(num);
-    }
-  }
+    for e in arr1:
+        s.add(e)
 
-  return intersection;
-}
+    intersection_arr = []
+
+    for e in arr2:
+        if e in s:
+            intersection_arr.append(e)
+
+    return intersection_arr
 ```
 
 ### Explanation
 
 - Create a new Set from the first array
-- Iterate through the second array and check if each element is in the set using the `has` method
+- Iterate through the second array and check if each element is in the set using the in keyword
 - If it is, push it into the intersection array
 - Return the intersection array
 
+
+Time: O(n + m)
+Space: O(n + min(n, m))
 </details>
 
 ### Test Cases
 
-```js
-test('Finding array intersection', () => {
-  expect(arrayIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])).toEqual([
-    3, 4, 5,
-  ]);
-  expect(arrayIntersection([10, 20, 30], [30, 40, 50])).toEqual([30]);
-  expect(arrayIntersection([1, 2, 3], [4, 5, 6])).toEqual([]);
-});
+```python
+import array_intersection as ai
+
+def test_array_intersection():
+  assert ai.array_intersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]) == [3,4,5]
+  assert ai.array_intersection([10, 20, 30], [30, 40, 50]) == [30]
+  assert ai.array_intersection([1, 2, 3], [4, 5, 6]) == []
 ```
