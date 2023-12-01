@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Write a function called `displayLikes` that takes in an array of names and returns a string of who likes the post.
+Write a function called `display_likes` that takes in an array of names and returns a string of who likes the post.
 
 The function should return a string formatted as follows:
 
@@ -14,24 +14,29 @@ The function should return a string formatted as follows:
 
 ### Function Signature
 
-```js
-/**
- * Returns a string of who likes the post.
- * @param {string[]} names - The names of the people who like the post.
- * @returns {string} - A string of who likes the post.
- */
-function displayLikes(names: string[]): string;
+```python
+def display_likes(names: list[str]) -> str:
+    """
+    Returns a string of who likes the post.
+
+    Parameters:
+    - names (list[str]): The names of the people who like the post.
+
+    Returns:
+    - str: A string of who likes the post.
+    """
+    # Your function implementation goes here
 ```
 
 ### Examples
 
-```JS
-displayLikes([]) // 'no one likes this'
-displayLikes(['Peter']) // 'Peter likes this'
-displayLikes(['Jacob', 'Alex']) // 'Jacob and Alex like this'
-displayLikes(['Max', 'John', 'Mark']) // 'Max, John and Mark like this'
-displayLikes(['Alex', 'Jacob', 'Mark', 'Max']) // 'Alex, Jacob and 2 others like this'
-displayLikes(['Alex', 'Jacob', 'Mark', 'Max', 'Jill']) // 'Alex, Jacob and 3 others like this'
+```python
+display_likes([]) # 'no one likes this'
+display_likes(['Peter']) # 'Peter likes this'
+display_likes(['Jacob', 'Alex']) # 'Jacob and Alex like this'
+display_likes(['Max', 'John', 'Mark']) # 'Max, John and Mark like this'
+display_likes(['Alex', 'Jacob', 'Mark', 'Max']) # 'Alex, Jacob and 2 others like this'
+display_likes(['Alex', 'Jacob', 'Mark', 'Max', 'Jill']) # 'Alex, Jacob and 3 others like this'
 ```
 
 ### Constraints
@@ -45,22 +50,19 @@ displayLikes(['Alex', 'Jacob', 'Mark', 'Max', 'Jill']) // 'Alex, Jacob and 3 oth
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function displayLikes(names) {
-  const length = names.length;
-
-  if (length === 0) {
-    return 'no one likes this';
-  } else if (length === 1) {
-    return `${names[0]} likes this`;
-  } else if (length === 2) {
-    return `${names[0]} and ${names[1]} like this`;
-  } else if (length === 3) {
-    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-  } else {
-    return `${names[0]}, ${names[1]} and ${length - 2} others like this`;
-  }
-}
+```python
+def display_likes(names):
+    length_of_names = len(names)
+    if length_of_names == 0:
+        return "no one likes this"
+    elif 1 == length_of_names:
+        return f"{names[0]} likes this"
+    elif 2 == length_of_names:
+        return f"{names[0]} and {names[1]} like this"
+    elif 3 == length_of_names:
+        return f"{names[0]}, {names[1]} and {names[2]} like this"
+    else:
+        return f"{names[0]}, {names[1]} and {length_of_names - 2} others like this"
 ```
 
 ### Explanation
@@ -74,19 +76,16 @@ This is pretty simple as it just requires a bunch of if statements. We could als
 
 ### Test Cases
 
-```js
-test('Display Likes', () => {
-  expect(displayLikes([])).toEqual('no one likes this');
-  expect(displayLikes(['Peter'])).toEqual('Peter likes this');
-  expect(displayLikes(['Jacob', 'Alex'])).toEqual('Jacob and Alex like this');
-  expect(displayLikes(['Max', 'John', 'Mark'])).toEqual(
-    'Max, John and Mark like this'
-  );
-  expect(displayLikes(['Alex', 'Jacob', 'Mark', 'Max'])).toEqual(
-    'Alex, Jacob and 2 others like this'
-  );
-  expect(displayLikes(['Alex', 'Jacob', 'Mark', 'Max', 'Jill'])).toEqual(
-    'Alex, Jacob and 3 others like this'
-  );
+```python
+import display_likes as dl
+
+
+def test_display_likes():
+    assert dl.display_likes([]) == 'no one likes this'
+    assert dl.display_likes(['Peter']) == 'Peter likes this'
+    assert dl.display_likes(['Jacob', 'Alex']) == 'Jacob and Alex like this'
+    assert dl.display_likes(['Max', 'John', 'Mark']) == 'Max, John and Mark like this'
+    assert dl.display_likes(['Alex', 'Jacob', 'Mark', 'Max']) == 'Alex, Jacob and 2 others like this'
+    assert dl.display_likes(['Alex', 'Jacob', 'Mark', 'Max', 'Jill']) == 'Alex, Jacob and 3 others like this'
 });
 ```
