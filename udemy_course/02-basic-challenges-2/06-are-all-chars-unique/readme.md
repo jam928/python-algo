@@ -2,27 +2,29 @@
 
 ## Instructions
 
-Write a function called `areAllCharactersUnique` that takes in a string and returns `true` or `false` depending on whether all characters in the string are unique (i.e., no character is repeated).
+Write a function called `are_all_characters_unique` that takes in a string and returns `true` or `false` depending on whether all characters in the string are unique (i.e., no character is repeated).
 
 ### Function Signature
 
-```js
-/**
- * Returns true if all characters in a string are unique.
- * @param {string} str - The string to check.
- * @returns {boolean} - Whether all characters in the string are unique.
- */
-function areAllCharactersUnique(str: string): boolean;
+```python
+def are_all_characters_unique(s):
+    """
+    Returns True if all characters in a string are unique.
+    :param s: The string to check.
+    :type s: str
+    :return: Whether all characters in the string are unique.
+    :rtype: bool
+    """
 ```
 
 ### Examples
 
-```js
-areAllCharactersUnique('abcdefg'); // true
-areAllCharactersUnique('abcdefgA'); // true
-areAllCharactersUnique('programming'); // false
-areAllCharactersUnique(''); // true
-areAllCharactersUnique('a'); // true
+```python
+are_all_characters_unique('abcdefg') # true
+are_all_characters_unique('abcdefgA') # true
+are_all_characters_unique('programming') # false
+are_all_characters_unique('') # true
+are_all_characters_unique('a') # true
 ```
 
 ### Constraints
@@ -41,20 +43,28 @@ areAllCharactersUnique('a'); // true
 
 Using a `Set`:
 
-```js
-function areAllCharactersUnique(str) {
-  const charSet = new Set();
+```python
+def are_all_characters_unique(s):
+  """
+  Returns True if all characters in a string are unique.
+  :param s: The string to check.
+  :type s: str
+  :return: Whether all characters in the string are unique.
+  :rtype: bool
+  """
+  # Create a new set
+  char_set = set()
 
-  for (let i = 0; i < str.length; i++) {
-    const char = str[i];
-    if (charSet.has(char)) {
-      return false;
-    }
-    charSet.add(char);
-  }
+  # Loop through the string
+  for char in s:
+    # If the set already has the current character, return False
+    if char in char_set:
+      return False
+    # Add the current character to the set
+    char_set.add(char)
 
-  return true;
-}
+  # If no characters are repeated, return True
+  return True
 ```
 
 ### Explanation
@@ -71,20 +81,27 @@ function areAllCharactersUnique(str) {
 
 Using an object:
 
-```js
-function areAllCharactersUnique(str) {
-  const charCount = {};
+```python
+def are_all_characters_unique_2(s):
+  """
+  Returns True if all characters in a string are unique.
+  :param s: The string to check.
+  :type s: str
+  :return: Whether all characters in the string are unique.
+  :rtype: bool
+  """
+  # Create a dictionary to keep track of the characters in the string
+  char_count = {}
 
-  for (let i = 0; i < str.length; i++) {
-    const char = str[i];
-    if (charCount[char]) {
-      return false;
-    }
-    charCount[char] = true;
-  }
-
-  return true;
-}
+  # Loop through the string
+  for char in s:
+    # If the character is already in the dictionary, return False
+    if char_count.get(char):
+      return False
+    # Add the current
+    char_count.update({char: True})
+    
+  return True
 ```
 
 ### Explanation
@@ -99,12 +116,15 @@ If we make it through the entire string without returning `false`, we return `tr
 
 ### Test Cases
 
-```js
-test('Unique Characters in a String', () => {
-  expect(areAllCharactersUnique('abcdefg')).toBe(true);
-  expect(areAllCharactersUnique('abcdefgA')).toBe(true);
-  expect(areAllCharactersUnique('programming')).toBe(false);
-  expect(areAllCharactersUnique('')).toBe(true);
-  expect(areAllCharactersUnique('a')).toBe(true);
-});
+```python
+import are_all_characters_unique as char_unique
+
+
+def test_unique_characters_in_a_string():
+    assert char_unique.are_all_characters_unique('abcdefg') is True
+    assert char_unique.are_all_characters_unique('abcdefgA') is True
+    assert char_unique.are_all_characters_unique('programming') is False
+    assert char_unique.are_all_characters_unique('') is True
+    assert char_unique.are_all_characters_unique('a') is True
+
 ```
