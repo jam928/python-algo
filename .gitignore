@@ -1,4 +1,4 @@
 node_modules
 .DS_Store
-.idea/misc.xml
-.idea/python-algo.iml
+!/.idea/python-algo.iml
+!/.idea/misc.xml
