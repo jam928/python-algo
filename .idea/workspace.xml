@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Updated dice game sim solution to python">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python-algo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-algo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples/simple-examples-done.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples/simple-examples.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples/simple_examples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares-solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate-total-sales-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate-total-sales-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate-total-sales.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,7 +66,28 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.simple_examples">
+  <component name="RunManager" selected="Python.calculate_total_sales_run">
+    <configuration name="calculate_total_sales_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales_run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dice_game_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,27 +101,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/08-dice-game/dice_game_run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="first_non_repeating_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/07-first-non-repeating" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/07-first-non-repeating/first_non_repeating_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,41 +130,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for dice_game_test.test_dice_game_simulation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="sum_of_even_squares_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/08-dice-game" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;dice_game_test.test_dice_game_simulation&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares_run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in first_non_repeating_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for sum_of_even_squares_test.test_sum_of_even_squares" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/07-first-non-repeating" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/02-basic-challenges-2/07-first-non-repeating/first_non_repeating_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;sum_of_even_squares_test.test_sum_of_even_squares&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.calculate_total_sales_run" />
+        <item itemvalue="Python tests.Python tests for sum_of_even_squares_test.test_sum_of_even_squares" />
+        <item itemvalue="Python.sum_of_even_squares_run" />
         <item itemvalue="Python.simple_examples" />
         <item itemvalue="Python.dice_game_run" />
-        <item itemvalue="Python tests.Python tests for dice_game_test.test_dice_game_simulation" />
-        <item itemvalue="Python tests.Python tests in first_non_repeating_test.py" />
-        <item itemvalue="Python.first_non_repeating_run" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +262,8 @@
     <MESSAGE value="Added are all chars unique solution in python" />
     <MESSAGE value="Added first non repeating character in a string solution in python" />
     <MESSAGE value="Updated dice game sim solution to python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated dice game sim solution to python" />
+    <MESSAGE value="Updated the solutions for format phone number and validate email in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the solutions for format phone number and validate email in python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,6 +272,11 @@
           <url>file://$PROJECT_DIR$/udemy_course/01-basic-challenges-1/06-title-case/title_case.py</url>
           <line>7</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

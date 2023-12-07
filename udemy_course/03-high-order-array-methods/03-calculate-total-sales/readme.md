@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Use the given array of product objects below, each with their name, price, and quantity sold. Additionally, you are given a tax rate as a percentage. Write a function called `calculateTotalSalesWithTax` that takes in an array of product objects, along with the tax rate, and returns the total sales amount including tax.
+Use the given array of product objects below, each with their name, price, and quantity sold. Additionally, you are given a tax rate as a percentage. Write a function called `calculate_total_sales_with_tax` that takes in an array of product objects, along with the tax rate, and returns the total sales amount including tax.
 
 ```js
 const products = [
@@ -14,32 +14,32 @@ const products = [
 
 ### Function Signature
 
-```js
-/**
- * Calculates and returns the total sales amount including tax from the input array of products and tax rate.
- * @param {Object[]} products - The array of product objects.
- * @param {string} products[].name - The name of the product.
- * @param {number} products[].price - The price of the product.
- * @param {number} products[].quantity - The quantity sold of the product.
- * @param {number} taxRate - The tax rate as a percentage.
- * @returns {number} - The total sales amount including tax.
- */
-function calculateTotalSalesWithTax(products: { name: string, price: number, quantity: number }[], taxRate: number): number;
+```python
+def calculate_total_sales_with_tax(products: List[Dict[str, float]], tax_rate: float) -> float:
+    """
+    Calculates and returns the total sales amount including tax from the input array of products and tax rate.
+    :param products: The array of product dictionaries.
+    :type products: list of dict
+    :param tax_rate: The tax rate as a percentage.
+    :type tax_rate: float
+    :return: The total sales amount including tax.
+    :rtype: float
+    """
 ```
 
 ### Examples
 
-```js
-calculateTotalSalesWithTax(
+```python
+calculate_total_sales_with_tax(
   [
     { name: 'Apple', price: 0.5, quantity: 10 },
     { name: 'Banana', price: 0.3, quantity: 20 },
     { name: 'Orange', price: 0.6, quantity: 15 },
   ],
   8
-); // 21.6 (20 + 8% tax)
+) # 21.6 (20 + 8% tax)
 
-calculateTotalSalesWithTax(
+calculate_total_sales_with_tax(
   [
     { name: 'Chocolate', price: 2.5, quantity: 5 },
     { name: 'Chips', price: 1.2, quantity: 10 },
@@ -47,7 +47,7 @@ calculateTotalSalesWithTax(
     { name: 'Candy', price: 0.5, quantity: 15 },
   ],
   5
-); // 42 (40 + 5% tax)
+); # 42 (40 + 5% tax)
 ```
 
 ### Constraints
@@ -68,22 +68,10 @@ calculateTotalSalesWithTax(
 
 This solution calculates the total sales amount including tax by iterating through the products, summing up the product of price and quantity for each product, and then adding the tax amount.
 
-```js
-const products = [
-  { name: 'Apple', price: 0.5, quantity: 10 },
-  { name: 'Banana', price: 0.3, quantity: 20 },
-  { name: 'Orange', price: 0.6, quantity: 15 },
-];
-
-function calculateTotalSalesWithTax(products, taxRate) {
-  const totalSales = products.reduce(
-    (sum, product) => sum + product.price * product.quantity,
-    0
-  );
-  const taxAmount = (totalSales * taxRate) / 100;
-  const totalSalesWithTax = totalSales + taxAmount;
-  return totalSalesWithTax;
-}
+```python
+def calculate_total_sales_with_tax(products, tax_rate):
+    total_price = sum(product['price'] * product['quantity'] for product in products)
+    return total_price + float((tax_rate / 100.0) * total_price)
 ```
 
 ## Explanation
@@ -97,31 +85,24 @@ function calculateTotalSalesWithTax(products, taxRate) {
 
 ### Test Cases
 
-```js
-test('Calculating total sales amount with tax', () => {
-  expect(
-    calculateTotalSalesWithTax(
-      [
-        { name: 'Apple', price: 0.5, quantity: 10 },
-        { name: 'Banana', price: 0.3, quantity: 20 },
-        { name: 'Orange', price: 0.6, quantity: 15 },
-      ],
-      8
-    )
-  ).toBe(21.6);
+```python
+import calculate_total_sales as c
 
-  expect(
-    calculateTotalSalesWithTax(
-      [
-        { name: 'Chocolate', price: 2.5, quantity: 5 },
-        { name: 'Chips', price: 1.2, quantity: 10 },
-        { name: 'Soda', price: 1.0, quantity: 8 },
-        { name: 'Candy', price: 0.5, quantity: 15 },
-      ],
-      5
-    )
-  ).toBe(42);
-});
+
+def test_calculating_total_sales_amount_with_tax():
+    products_1 = [
+        {'name': 'Apple', 'price': 0.5, 'quantity': 10},
+        {'name': 'Banana', 'price': 0.3, 'quantity': 20},
+        {'name': 'Orange', 'price': 0.6, 'quantity': 15}
+    ]
+    products_2 = [
+        {'name': 'Chocolate', 'price': 2.5, 'quantity': 5},
+        {'name': 'Chips', 'price': 1.2, 'quantity': 10},
+        {'name': 'Soda', 'price': 1.0, 'quantity': 8},
+        {'name': 'Candy', 'price': 0.5, 'quantity': 15},
+    ]
+    assert c.calculate_total_sales_with_tax(products_1, 8) == 21.6
+    assert c.calculate_total_sales_with_tax(products_2, 5) == 42
 ```
 
 Feel free to adjust the challenge or the test cases as needed. If you have any further questions or need additional assistance, please let me know!
