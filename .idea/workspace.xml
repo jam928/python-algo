@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Updated solutions for sum of even squares and calculate total sales in python.">
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Updated solutions for highest_scoring_word in python.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest-scoring-word-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest-scoring-word-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest-scoring-word.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid-anagrams-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid_anagrams_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid-anagrams-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid_anagrams_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid-anagrams-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid_anagrams_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid-anagrams.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid_anagrams.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,28 +61,7 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for highest_scoring_word_test.test_find_the_highest_scoring_word">
-    <configuration name="calculate_total_sales_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales_run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.valid_anagrams_run">
     <configuration name="highest_scoring_word_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word_run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="valid_anagrams_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid_anagrams_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,27 +132,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for sum_of_even_squares_test.test_sum_of_even_squares" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for valid_anagrams_test.test_valid_anagrams" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;sum_of_even_squares_test.test_sum_of_even_squares&quot;" />
+      <option name="_new_target" value="&quot;valid_anagrams_test.test_valid_anagrams&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.valid_anagrams_run" />
+        <item itemvalue="Python tests.Python tests for valid_anagrams_test.test_valid_anagrams" />
         <item itemvalue="Python tests.Python tests for highest_scoring_word_test.test_find_the_highest_scoring_word" />
         <item itemvalue="Python.highest_scoring_word_run" />
         <item itemvalue="Python tests.Python tests for calculate_total_sales_test.test_calculating_total_sales_amount_with_tax" />
-        <item itemvalue="Python.calculate_total_sales_run" />
-        <item itemvalue="Python tests.Python tests for sum_of_even_squares_test.test_sum_of_even_squares" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701910824910</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated solutions for highest_scoring_word in python.">
+      <option name="closed" value="true" />
+      <created>1702002470595</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702002470595</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +261,8 @@
     <MESSAGE value="Updated dice game sim solution to python" />
     <MESSAGE value="Updated the solutions for format phone number and validate email in python" />
     <MESSAGE value="Updated solutions for sum of even squares and calculate total sales in python." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated solutions for sum of even squares and calculate total sales in python." />
+    <MESSAGE value="Updated solutions for highest_scoring_word in python." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated solutions for highest_scoring_word in python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
