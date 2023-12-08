@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Updated dice game sim solution to python">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Updated solutions for sum of even squares and calculate total sales in python.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares-solution.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum-of-even-squares.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate-total-sales-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate-total-sales-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate-total-sales.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/calculate_total_sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest-scoring-word-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest-scoring-word-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest-scoring-word.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.calculate_total_sales_run">
+  <component name="RunManager" selected="Python tests.Python tests for highest_scoring_word_test.test_find_the_highest_scoring_word">
     <configuration name="calculate_total_sales_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dice_game_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="highest_scoring_word_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +90,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/08-dice-game" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/02-basic-challenges-2/08-dice-game/dice_game_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word/highest_scoring_word_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,46 +103,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="simple_examples" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for calculate_total_sales_test.test_calculating_total_sales_amount_with_tax" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/03-calculate-total-sales" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/01-simple-examples/simple_examples.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;calculate_total_sales_test.test_calculating_total_sales_amount_with_tax&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="sum_of_even_squares_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for highest_scoring_word_test.test_find_the_highest_scoring_word" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/04-highest-scoring-word" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/02-sum-of-even-squares/sum_of_even_squares_run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;highest_scoring_word_test.test_find_the_highest_scoring_word&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for sum_of_even_squares_test.test_sum_of_even_squares" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -167,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for highest_scoring_word_test.test_find_the_highest_scoring_word" />
+        <item itemvalue="Python.highest_scoring_word_run" />
+        <item itemvalue="Python tests.Python tests for calculate_total_sales_test.test_calculating_total_sales_amount_with_tax" />
         <item itemvalue="Python.calculate_total_sales_run" />
         <item itemvalue="Python tests.Python tests for sum_of_even_squares_test.test_sum_of_even_squares" />
-        <item itemvalue="Python.sum_of_even_squares_run" />
-        <item itemvalue="Python.simple_examples" />
-        <item itemvalue="Python.dice_game_run" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701654046482</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated solutions for sum of even squares and calculate total sales in python.">
+      <option name="closed" value="true" />
+      <created>1701910824910</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701910824910</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +251,8 @@
     <MESSAGE value="Added first non repeating character in a string solution in python" />
     <MESSAGE value="Updated dice game sim solution to python" />
     <MESSAGE value="Updated the solutions for format phone number and validate email in python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the solutions for format phone number and validate email in python" />
+    <MESSAGE value="Updated solutions for sum of even squares and calculate total sales in python." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated solutions for sum of even squares and calculate total sales in python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

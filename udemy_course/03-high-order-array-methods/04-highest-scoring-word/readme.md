@@ -12,21 +12,24 @@ All letters will be lowercase and all inputs will be valid.
 
 ### Function Signature
 
-```js
-/**
- * Returns the highest scoring word from a string.
- * @param {string} str - The input string.
- * @returns {string} - The highest scoring word.
- */
-function highestScoringWord(str: string): string;
+```python
+def highest_scoring_word(s: str) -> str:
+    """
+    Returns the highest scoring word from a string.
+    :param s: The input string.
+    :type s: str
+    :return: The highest scoring word.
+    :rtype: str
+    """
+    # Implementation of the function goes here
 ```
 
 ### Examples
 
-```js
-highestScoringWord('man i need a taxi up to ubud'); // 'taxi'
-highestScoringWord('what time are we climbing up the volcano'); // 'volcano'
-highestScoringWord('take me to semynak'); // 'semynak'
+```python
+highest_scoring_word('man i need a taxi up to ubud') # 'taxi'
+highest_scoring_word('what time are we climbing up the volcano') # 'volcano'
+highest_scoring_word('take me to semynak') # 'semynak'
 ```
 
 ### Constraints
@@ -36,93 +39,75 @@ highestScoringWord('take me to semynak'); // 'semynak'
 ### Hints
 
 - You can use the `split` method to separate the words.
-- You can use the `map` method to calculate the score for each word.
-- You can use the `reduce` method to find the word with the highest score.
-
+- You can use the `sum` method to calculate the score for each word.
+- 
 ## Solutions
 
 <details>
   <summary>Click For Solution 1</summary>
 
-```js
-function highestScoringWord(str) {
-  const words = str.split(' ');
+```python
+def highest_scoring_word(s):
+    # Split the string into an array of words
+    words = s.split()
 
-  const scores = words.map((word) => {
-    let score = 0;
-    for (const letter of word) {
-      score += letter.charCodeAt(0) - 96;
-    }
-    return score;
-  });
+    # Map the array of words to an array of scores
+    scores = [sum(ord(letter) - ord('a') + 1 for letter in word) for word in words]
 
-  let highestScore = 0;
-  let highestIndex = 0;
+    # Initialize the highest score and index to 0
+    highest_score = 0
+    highest_index = 0
 
-  for (let i = 0; i < scores.length; i++) {
-    if (scores[i] > highestScore) {
-      highestScore = scores[i];
-      highestIndex = i;
-    }
-  }
+    # Loop through the scores array
+    for i in range(len(scores)):
+        # If the current score is higher than the highest score, update the highest score and index
+        if scores[i] > highest_score:
+            highest_score = scores[i]
+            highest_index = i
 
-  return words[highestIndex];
-}
+    # Return the word with the highest score
+    return words[highest_index]
 ```
-
-## Explanation
-
-- Split the input string into an array of words using the `split` method.
-- Use the `map` method to calculate the score for each word. For each letter in a word, we get its character code using `charCodeAt(0)` and subtract 96 to get its position in the alphabet (e.g., `a` becomes 1, `b` becomes 2, and so on). We sum these positions to get the score for the word.
-- Find the index of the word with the highest score using a loop. If the current score is greater than the highest score found so far, we update the `highestScore` and `highestIndex` variables.
-- Return the word with the highest score using the `highestIndex`.
 
 </details>
 
 <details>
   <summary>Click For Solution 2</summary>
 
-This solution looks a bit cleaner than the previous one, but it's not as efficient (difference is negligible). It uses the `reduce` method to calculate the score for each word, and the `Math.max` method to find the highest score.
+```python
+def highest_scoring_word(s: str) -> str:
+    # Split the sentence by space
+    words = s.split(' ')
 
-```js
-function highestScoringWord(str) {
-  const words = str.split(' ');
+    # map the array of words to an array of scores
+    scores = [sum(ord(letter) - ord('a') + 1 for letter in word) for word in words]
 
-  const scores = words.map((word) =>
-    Array.from(word).reduce(
-      (score, letter) => score + letter.charCodeAt(0) - 96,
-      0
-    )
-  );
+    highest_score = max(scores)
+    highest_index = scores.index(highest_score)
 
-  const highestScore = Math.max(...scores);
-  const highestIndex = scores.indexOf(highestScore);
-
-  return words[highestIndex];
-}
+    return words[highest_index]
 ```
 
 ## Explanation
 
 - Split the input string into an array of words using the `split` method.
-- Use the `map` method to calculate the score for each word.
-- Use the `reduce` method to sum the scores for each letter in a word. For each letter in a word, we get its character code using `charCodeAt(0)` and subtract 96 to get its position in the alphabet (e.g., `a` becomes 1, `b` becomes 2, and so on). We sum these positions to get the score for the word.
-- Find the highest score using the `Math.max` method.
-- Find the index of the word with the highest score using the `indexOf` method.
-- Return the word with the highest score using the `highestIndex`.
+- Use the `sum` method to calculate the score for each word in the inner for loop of words
+- Find the highest score using the `max` method.
+- Find the index of the word with the highest score using the `index` method.
+- Return the word with the highest score using the `highest_index`.
 
 </details>
 
 ### Test Cases
 
-```js
-test('Finding the highest scoring word', () => {
-  expect(highestScoringWord('hello my name is xavier')).toBe('xavier');
-  expect(highestScoringWord('what time are we climbing up the volcano')).toBe(
-    'volcano'
-  );
-  expect(highestScoringWord('take me to semynak')).toBe('semynak');
-});
+```python
+import highest_scoring_word as h
+
+
+def test_find_the_highest_scoring_word():
+    assert h.highest_scoring_word('hello my name is xavier') == 'xavier'
+    assert h.highest_scoring_word('what time are we climbing up the volcano') == 'volcano'
+    assert h.highest_scoring_word('take me to semynak') == 'semynak'
 ```
 
 Remember to use the provided test cases to verify your solution
