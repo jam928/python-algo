@@ -2,26 +2,29 @@
 
 ## Instructions
 
-Write a function called `generateHashtag` that takes a string as input and returns a hashtag-generated string according to the rules below. If the generated hashtag string is longer than 140 characters or the input/result is an empty string, the function should return `false`.
+Write a function called `generate_hashtag` that takes a string as input and returns a hashtag-generated string according to the rules below. If the generated hashtag string is longer than 140 characters or the input/result is an empty string, the function should return `false`.
 
 ### Function Signature
 
-```js
-/**
- * Generates a hashtag from the input string.
- * @param {string} str - The input string.
- * @returns {string|boolean} - The generated hashtag string or false.
- */
-function generateHashtag(str: string): string | boolean;
+```python
+def generate_hashtag(s: str) -> Union[str, bool]:
+    """
+    Generates a hashtag from the input string.
+    :param s: The input string.
+    :type s: str
+    :return: The generated hashtag string or False.
+    :rtype: str or bool
+    """
+    # Implementation of the function goes here
 ```
 
 ### Examples
 
-```JS
-generateHashtag("JavaScript is awesome"); // "#JavaScriptIsAwesome"
-generateHashtag("hello world"); // "#HelloWorld"
-generateHashtag("This is a very very very very very very very very very very very very very very long input that should result in a false hashtag because it exceeds the character limit of 140"); // false
-generateHashtag(""); // false
+```python
+generate_hashtag("JavaScript is awesome") # "#JavaScriptIsAwesome"
+generate_hashtag("hello world") # "#HelloWorld"
+generate_hashtag("This is a very very very very very very very very very very very very very very long input that should result in a false hashtag because it exceeds the character limit of 140") # false
+generate_hashtag("") # false
 ```
 
 ### Constraints
@@ -33,8 +36,7 @@ generateHashtag(""); // false
 
 ### Hints
 
-- You can use the string manipulation methods `trim()`, `split()`, and `join()` to work with the input string.
-- You can use the string method `charAt()` to get the character at a specific index.
+- You can use the string manipulation methods `trim()`, `strip()`, and `join()` to work with the input string.
 - Use string methods to capitalize the first letter of each word.
 
 ## Solutions
@@ -42,32 +44,30 @@ generateHashtag(""); // false
 <details>
   <summary>Click For Solution 1</summary>
 
-```js
-function generateHashtag(str) {
-  if (str.trim() === '') {
-    return false;
-  }
+```python
+def generate_hashtag(s):
+  # If the string is empty or contains only whitespace characters, return False.
+  if s.strip() == '':
+    return False
 
-  const words = str.trim().split(/\s+/);
-  const capitalizedWords = words.map(
-    (word) => word.charAt(0).toUpperCase() + word.slice(1)
-  );
+  # Split the string into an array of words.
+  words = s.strip().split()
 
-  const hashtag = '#' + capitalizedWords.join('');
+  # Return a new list with the first letter of each word capitalized.
+  capitalized_words = [word.capitalize() for word in words]
 
-  if (hashtag.length > 140) {
-    return false;
-  }
+  # Join the words together into a string, prefixed with a hash.
+  hashtag = '#' + ''.join(capitalized_words)
 
-  return hashtag;
-}
+  # If the hashtag is longer than 140 characters, return False, otherwise return the hashtag.
+  return False if len(hashtag) > 140 else hashtag
 ```
 
 ### Explanation
 
 - Check if the input string is empty or contains only whitespace characters. If so, return `false`.
 - Split the input string into an array of words using the `split()` method. The `split()` method accepts a regular expression as an argument. The regular expression `/\s+/` matches one or more whitespace characters.
-- Use the `map()` method to create a new array of capitalized words. The `map()` method accepts a callback function as an argument. The callback function is called for each element in the array. The callback function accepts the current element as an argument. The callback function returns the capitalized word.
+- Use list comprehension to capitalize each word in words
 - Join the capitalized words into a string using the `join()` method. The `join()` method accepts a string as an argument. The string is used to join the elements of the array. In this case, we want to join the elements of the array without any characters between them.
 - Check if the generated hashtag string is longer than 140 characters. If so, return `false`.
 - Return the generated hashtag string.
@@ -77,21 +77,38 @@ function generateHashtag(str) {
 <details>
   <summary>Click For Solution 2</summary>
 
-```js
-function generateHashtag(str) {
-  const hashtag = str.split(' ').reduce(function (tag, word) {
-    return tag + word.charAt(0).toUpperCase() + word.substring(1);
-  }, '#');
+```python
+from typing import Union
 
-  return hashtag.length == 1 || hashtag.length > 140 ? false : hashtag;
-}
+def generate_hashtag(s: str) -> Union[str, bool]:
+    # Split the string into an array of words.
+    # Capitalize each word in the split and then join it with a ''
+    # Concat with #
+    hashtag = '#' + ''.join(word.capitalize() for word in s.split())
+
+    # If the hashtag is only one character long or longer than 140 characters, return False, otherwise return the hashtag.
+    return False if len(hashtag) == 1 or len(hashtag) > 140 else hashtag
+
 ```
 
 ### Explanation
 
-- Split the input string into an array of words using the `split()` method.
-- Use the `reduce()` method to create the hashtag string. We are passing the `#` character as the initial value of the accumulator. Then we are concatenating the accumulator with the capitalized word and then concatenating that with the rest of the word. We do this for each word in the array.
-- Check if the generated hashtag string is longer than 140 characters. If so, return `false`.
-- Return the generated hashtag string.
+- Concat `#` with a join operation of each word that is capitalized in the string split. Join with ''
+- return false if len of above string is 1(means the join operation joined with an empty string)
+- return false if the length of the above word is greater than 140
+- else return the above word
 
 </details>
+
+### Test Cases
+
+```python
+import hashtag_generator as h
+
+
+def test_generating_hashtags():
+    assert h.generate_hashtag(' Hello there thanks for trying my Kata') == '#HelloThereThanksForTryingMyKata'
+    assert h.generate_hashtag('    Hello     World   ') == '#HelloWorld'
+    assert h.generate_hashtag('') is False
+    assert h.generate_hashtag('This is a very very very very very very very very very very very very very very long input that should result in a false hashtag because it exceeds the character limit of 140') is False
+```

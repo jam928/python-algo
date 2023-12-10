@@ -2,28 +2,31 @@
 
 ## Instructions
 
-Write a function called `isValidIPv4` that takes a string as input and returns `true` if the input is a valid IPv4 address in dot-decimal format, and `false` otherwise. An IPv4 address should consist of four octets, with values between 0 and 255, inclusive.
+Write a function called `is_valid_ipv4` that takes a string as input and returns `true` if the input is a valid IPv4 address in dot-decimal format, and `false` otherwise. An IPv4 address should consist of four octets, with values between 0 and 255, inclusive.
 
 ### Function Signature
 
-```js
-/**
- * Checks if a given string is a valid IPv4 address.
- * @param {string} input - The input string to check.
- * @returns {boolean} - True if the input is a valid IPv4 address, false otherwise.
- */
-function isValidIPv4(input: string): boolean;
+```python
+def is_valid_ipv4(input_str: str) -> bool:
+    """
+    Checks if a given string is a valid IPv4 address.
+    :param input_str: The input string to check.
+    :type input_str: str
+    :return: True if the input is a valid IPv4 address, False otherwise.
+    :rtype: bool
+    """
+    # Your implementation here to check if the input is a valid IPv4 address
 ```
 
 ### Examples
 
-```js
-isValidIPv4('1.2.3.4'); // true
-isValidIPv4('123.45.67.89'); // true
-isValidIPv4('1.2.3'); // false
-isValidIPv4('1.2.3.4.5'); // false
-isValidIPv4('123.456.78.90'); // false
-isValidIPv4('123.045.067.089'); // false
+```python
+is_valid_ipv4('1.2.3.4') # true
+is_valid_ipv4('123.45.67.89') # true
+is_valid_ipv4('1.2.3') # false
+is_valid_ipv4('1.2.3.4.5') # false
+is_valid_ipv4('123.456.78.90') # false
+is_valid_ipv4('123.045.067.089') # false
 ```
 
 ### Constraints
