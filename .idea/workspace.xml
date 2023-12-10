@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Updated solutions for valid anagrams in python.">
+      <change beforePath="$PROJECT_DIR$/.idea/python-algo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-algo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag-generator-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag_generator_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag-generator-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag_generator_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag-generator-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag_generator_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid-ipv4-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid-ipv4-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid-ipv4-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid-ipv4.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,21 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for hashtag_generator_test.test_generating_hashtags">
+  <component name="RunManager" selected="Python.valid_ipv4_run">
     <configuration name="hashtag_generator_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="valid_ipv4_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,32 +119,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="valid_anagrams_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/05-valid-anagrams/valid_anagrams_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,13 +146,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for valid_ipv4_test.test_valid_ipv4_addresses" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;valid_ipv4_test.test_valid_ipv4_addresses&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.valid_ipv4_run" />
+        <item itemvalue="Python tests.Python tests for valid_ipv4_test.test_valid_ipv4_addresses" />
         <item itemvalue="Python tests.Python tests for hashtag_generator_test.test_generating_hashtags" />
         <item itemvalue="Python.hashtag_generator_solution" />
         <item itemvalue="Python.hashtag_generator_run" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.valid_anagrams_run" />
       </list>
     </recent_temporary>
   </component>
@@ -312,6 +304,16 @@
           <url>file://$PROJECT_DIR$/udemy_course/03-high-order-array-methods/06-hashtag-generator/hashtag_generator.py</url>
           <line>8</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4_test.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/03-high-order-array-methods/07-valid-ipv4/valid_ipv4.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

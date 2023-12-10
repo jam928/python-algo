@@ -43,25 +43,18 @@ is_valid_ipv4('123.045.067.089') # false
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function isValidIPv4(input) {
-  const octets = input.split('.');
-  if (octets.length !== 4) {
-    return false;
-  }
-  return octets.every((octet) => {
-    const num = parseInt(octet);
-    return num >= 0 && num <= 255 && octet === num.toString();
-  });
-}
+```python
+def is_valid_ipv4(input_str: str) -> bool:
+    octets = input_str.split(".")
+    return len(octets) == 4 and all(0 <= int(octet) <= 255 and octet == str(int(octet)) for octet in octets)
 ```
 
 ## Explanation
 
 - Split the input string into an array of strings using the `split()` method.
 - Check if the array has exactly four elements. If not, return `false`.
-- Use the `every()` method to check if all octets are valid.
-  - Convert the octet to a number using `parseInt()`.
+- Use the `all()` method to check if all octets are valid.
+  - Convert the octet to a number using `int()`.
   - Check if the number is between 0 and 255, inclusive.
   - Check if the octet is equal to the number converted back to a string. This is to check for leading zeros.
 
@@ -69,15 +62,22 @@ function isValidIPv4(input) {
 
 ### Test Cases
 
-```js
-test('Checking Valid IPv4 Addresses', () => {
-  expect(isValidIPv4('1.2.3.4')).toBe(true);
-  expect(isValidIPv4('123.45.67.89')).toBe(true);
-  expect(isValidIPv4('1.2.3')).toBe(false);
-  expect(isValidIPv4('1.2.3.4.5')).toBe(false);
-  expect(isValidIPv4('123.456.78.90')).toBe(false);
-  expect(isValidIPv4('123.045.067.089')).toBe(false);
-});
+```python
+import valid_ipv4 as v
+
+
+def test_valid_ipv4_addresses():
+    ipv4_addresses = {
+        '1.2.3.4': True,
+        '123.45.67.89': True,
+        '1.2.3': False,
+        '1.2.3.4.5': False,
+        '123.456.78.90': False,
+        '123.045.067.089': False
+    }
+
+    for e in ipv4_addresses:
+        assert v.is_valid_ipv4(e) is ipv4_addresses[e]
 ```
 
 You can use this template for your challenge to validate IPv4 addresses in dot-decimal format!
