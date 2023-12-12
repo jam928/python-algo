@@ -34,21 +34,18 @@ This really depends on the problem, the developer and many other factors, but in
 
 Let's look at a really simple example of recursion:
 
-```js
-function countDown(num) {
-  // Base case
-  if (num <= 0) {
-    console.log('All done!');
-    return;
-  }
+```python
+def count_down(num):
+    # base case
+    if num <= 0:
+        print('All done!')
+        return
+    
+    print(num)
+    num = num - 1
+    count_down(num)
 
-  // Recursive case
-  console.log(num);
-  num--;
-  countDown(num);
-}
-
-countDown(3);
+count_down(3)
 ```
 
 In this example, we have a function called `countDown` that takes in a number. We have what we call the `base case`, which is when the number is less than or equal to 0. If this is true, we log "All done!" and return. If it is not true, we run the `recursive case`, which will log the number, subtract 1 from it, and then call the function again with the new number. This will continue until the number is less than or equal to 0.
