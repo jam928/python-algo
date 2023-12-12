@@ -2,27 +2,31 @@
 
 ## Instructions
 
-Write a function called `reverseString` that takes in a string and returns the reversed version of the string. Be sure to use recursion in your solution.
+Write a function called `reverse_string` that takes in a string and returns the reversed version of the string. Be sure to use recursion in your solution.
 
 ### Function Signature
 
-```js
-/**
- * Returns the reverse of a string.
- * @param {string} str - The string to reverse.
- * @returns {string} - The reverse of the string.
- */
-function reverseString(str: string): string;
+```python
+def reverse_string(s: str) -> str:
+    """
+    Returns the reverse of a string.
+    
+    Args:
+    - s (str): The string to reverse.
+
+    Returns:
+    - str: The reverse of the string.
+    """
 ```
 
 ## Examples
 
-```js
-reverseString('hello'); // should return 'olleh'
-reverseString('world'); // should return 'dlrow'
-reverseString(''); // should return ''
-reverseString('a'); // should return 'a'
-reverseString('racecar'); // should return 'racecar'
+```python
+reverse_string('hello') # should return 'olleh'
+reverse_string('world') # should return 'dlrow'
+reverse_string('') # should return ''
+reverse_string('a') # should return 'a'
+reverse_string('racecar') # should return 'racecar'
 ```
 
 ### Hints
@@ -36,14 +40,14 @@ reverseString('racecar'); // should return 'racecar'
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function reverseString(str) {
-  if (str === '') {
-    return '';
-  }
+```python
+def reverse_string(s):
+    # Base case - if s is empty, return empty string
+    if s == '':
+        return ''
 
-  return reverseString(str.substr(1)) + str[0];
-}
+    # Recursive case - return the last character of s and call reverse_string again
+    return reverse_string(s[1:]) + s[0]
 ```
 
 ### Explanation
@@ -77,20 +81,22 @@ So, the function concatenates the characters in reverse order as it "unwinds" th
 
 We could even cut this solution down to a single line:
 
-```js
-// Shorter version
-const reverseString = (str) =>
-  str === '' ? '' : reverseString(str.substr(1)) + str.charAt(0);
+```python
+def reverse_string_2(s):
+    return '' if s == '' else reverse_string(s[1:]) + s[0]
 ```
 
 </details>
 
 ### Test Cases
 
-```js
-test('Reversing a string', () => {
-  expect(reverseString('Hello')).toBe('olleH');
-  expect(reverseString('JavaScript')).toBe('tpircSavaJ');
-  expect(reverseString('12345')).toBe('54321');
-});
+```python
+import reverse_string_recursion as r
+
+
+def test_reverse_a_string():
+    assert r.reverse_string("Hello") == 'olleH'
+    assert r.reverse_string("JavaScript") == 'tpircSavaJ'
+    assert r.reverse_string("12345") == '54321'
+
 ```

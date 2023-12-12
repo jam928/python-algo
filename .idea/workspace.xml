@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added analyze car mileage solutions in python.">
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added find missing letter refactor solutions in python.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/python-algo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-algo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count-down-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count_down_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count-down-solution.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count-down-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count_down_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count-down.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count_down.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/sum-up-to-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/sum_up_to_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/sum-up-to-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/sum_up_to_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/sum-up-to.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/02-unwinding/sum_up_to.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse-string-recursion-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse_string_recursion_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse-string-recursion-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse_string_recursion_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse-string-recursion.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse_string_recursion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for sum_up_to_test.test_sum_up_positive_integers">
-    <configuration name="count_down_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in reverse_string_recursion_test.py">
+    <configuration name="reverse_string_recursion_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,11 +78,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro/count_down_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse_string_recursion_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,31 +112,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for count_down_test.TestCountDown" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for reverse_string_recursion_test.test_reverse_a_string" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/01-recursion-intro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;count_down_test.TestCountDown&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for password_validator_test.test_password_validation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/03-high-order-array-methods/09-password-validator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;password_validator_test.test_password_validation&quot;" />
+      <option name="_new_target" value="&quot;reverse_string_recursion_test.test_reverse_a_string&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -159,13 +140,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in reverse_string_recursion_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse_string_recursion_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in reverse_string_recursion_test.py" />
+        <item itemvalue="Python tests.Python tests for reverse_string_recursion_test.test_reverse_a_string" />
+        <item itemvalue="Python.reverse_string_recursion_run" />
         <item itemvalue="Python tests.Python tests for sum_up_to_test.test_sum_up_positive_integers" />
         <item itemvalue="Python.sum_up_to_run" />
-        <item itemvalue="Python tests.Python tests for count_down_test.TestCountDown" />
-        <item itemvalue="Python.count_down_run" />
-        <item itemvalue="Python tests.Python tests for password_validator_test.test_password_validation" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702178450984</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added find missing letter refactor solutions in python.">
+      <option name="closed" value="true" />
+      <created>1702345285444</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702345285444</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +305,8 @@
     <MESSAGE value="Updated solutions for valid anagrams in python." />
     <MESSAGE value="Added valid ipv4 solutions in python." />
     <MESSAGE value="Added analyze car mileage solutions in python." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added analyze car mileage solutions in python." />
+    <MESSAGE value="Added find missing letter refactor solutions in python." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added find missing letter refactor solutions in python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
