@@ -31,21 +31,28 @@ Write a function called `fibonacci` that takes in a number and returns the numbe
 
 ### Function Signature
 
-```js
-/**
- * Returns the number at the given index of the Fibonacci sequence.
- * @param {number} num - The index of the Fibonacci sequence.
- * @returns {number} - The number at the given index of the Fibonacci sequence.
- */
-function fibonacci(num: number): number;
+```python
+def fibonacci(num: int) -> int:
+    """
+    Returns the number at the given index of the Fibonacci sequence.
+
+    Args:
+    - num (int): The index of the Fibonacci sequence.
+
+    Returns:
+    - int: The number at the given index of the Fibonacci sequence.
+    """
+    # Implementation of the Fibonacci function would follow here
+    pass
+
 ```
 
 ### Examples
 
-```js
-fibonacci(4); // 3
-fibonacci(6); // 8
-fibonacci(10); // 55
+```python
+fibonacci(4) # 3
+fibonacci(6) # 8
+fibonacci(10) # 55
 ```
 
 ### Constraints
@@ -62,14 +69,12 @@ fibonacci(10); // 55
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function fibonacci(num) {
-  // Base case
-  if (num < 2) return num;
+```python
+def fibonacci(num: int) -> int:
+    if num < 2:
+        return num
 
-  // Recursive case
-  return fibonacci(num - 1) + fibonacci(num - 2);
-}
+    return fibonacci(num - 1) + fibonacci(num - 2)
 ```
 
 ### Explanation
@@ -98,26 +103,26 @@ So, `fibonacci(5)` returns `5`, which is the fifth number in the Fibonacci seque
 
 We could make this a one liner by using the ternary operator:
 
-```js
-const fibonacci = (num) =>
-  num < 2 ? num : fibonacci(num - 1) + fibonacci(num - 2);
+```python
+def fibonacci(num):
+    return num if num < 2 else fibonacci(num - 1) + fibonacci(num - 2)
 ```
 
 </details>
 
 ### Test Cases
 
-```js
-describe('fibonacci', () => {
-  it('should return the correct Fibonacci number', () => {
-    expect(fibonacci(0)).toBe(0); // The 0th Fibonacci number is 0
-    expect(fibonacci(1)).toBe(1); // The 1st Fibonacci number is 1
-    expect(fibonacci(2)).toBe(1); // The 2nd Fibonacci number is 1 (0 + 1)
-    expect(fibonacci(3)).toBe(2); // The 3rd Fibonacci number is 2 (1 + 1)
-    expect(fibonacci(4)).toBe(3); // The 4th Fibonacci number is 3 (1 + 2)
-    expect(fibonacci(5)).toBe(5); // The 5th Fibonacci number is 5 (2 + 3)
-    expect(fibonacci(6)).toBe(8); // The 6th Fibonacci number is 8 (3 + 5)
-    expect(fibonacci(7)).toBe(13); // The 7th Fibonacci number is 13 (5 + 8)
-  });
-});
+```python
+from fibonacci import fibonacci
+
+
+def test_fibonacci():
+    assert fibonacci(0) == 0  # The 0th Fibonacci number is 0
+    assert fibonacci(1) == 1  # The 1st Fibonacci number is 1
+    assert fibonacci(2) == 1  # The 2nd Fibonacci number is 1 (0 + 1)
+    assert fibonacci(3) == 2  # The 3rd Fibonacci number is 2 (1 + 1)
+    assert fibonacci(4) == 3  # The 4th Fibonacci number is 3 (1 + 2)
+    assert fibonacci(5) == 5  # The 5th Fibonacci number is 5 (2 + 3)
+    assert fibonacci(6) == 8  # The 6th Fibonacci number is 8 (3 + 5)
+    assert fibonacci(7) == 13  # The 7th Fibonacci number is 13 (5 + 8)
 ```

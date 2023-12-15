@@ -21,13 +21,19 @@ Write a function called `factorial` that takes in a number and returns the facto
 
 ### Function Signature
 
-```js
-/**
- * Returns the factorial of a number.
- * @param {number} num - The number.
- * @returns {number} - The factorial of the number.
- */
-function factorial(num: number): number;
+```python
+def factorial(num: int) -> int:
+    """
+    Returns the factorial of a number.
+
+    Args:
+    - num (int): The number.
+
+    Returns:
+    - int: The factorial of the number.
+    """
+    # Implementation of the factorial function would follow here
+    pass
 ```
 
 ### Constraints
@@ -41,10 +47,10 @@ function factorial(num: number): number;
 
 ### Examples
 
-```js
-factorial(0); // 1
-factorial(5); // 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
-factorial(10); // 3628800 (10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 3628800)
+```python
+factorial(0) # 1
+factorial(5) # 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
+factorial(10) # 3628800 (10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 3628800)
 ```
 
 ## Solutions
@@ -52,14 +58,12 @@ factorial(10); // 3628800 (10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 362880
 <details>
   <summary>Click For Solution </summary>
 
-```js
-function factorial(num) {
-  if (num === 0 || num === 1) {
-    return 1;
-  }
+```python
+def factorial(num: int) -> int:
+    if num <= 1:
+        return 1
 
-  return num * factorial(num - 1);
-}
+    return num * factorial(num - 1)
 ```
 
 ### Explanation
@@ -95,16 +99,19 @@ The final result is indeed 120, which is the correct factorial of 5.
 
 ### Test Cases
 
-```js
-test('Factorial of 0 should be 1', () => {
-  expect(factorial(0)).toBe(1);
-});
+```python
+from factorial import factorial
 
-test('Factorial of 5 should be 120', () => {
-  expect(factorial(5)).toBe(120);
-});
 
-test('Factorial of 10 should be 3628800', () => {
-  expect(factorial(10)).toBe(3628800);
-});
+def test_factorial_of_0_should_be_1():
+    assert factorial(0) == 1
+
+
+def test_factorial_of_5_should_be_120():
+    assert factorial(5) == 120
+
+
+def test_factorial_of_10_should_be_3628800():
+    assert factorial(10) == 3628800
+
 ```
