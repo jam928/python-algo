@@ -6,22 +6,26 @@ Write a function called `power` that takes in a `base` and an `exponent` and ret
 
 ### Function Signature
 
-```js
-/**
- * Returns the result of raising the base to the power of the exponent.
- * @param {number} base - The base number.
- * @param {number} exponent - The exponent.
- * @returns {number} - The result of the calculation.
- */
-function power(base: number, exponent: number): number;
+```python
+def power(base: float, exponent: float) -> float:
+    """
+    Returns the result of raising the base to the power of the exponent.
+    
+    Parameters:
+        base (float): The base number.
+        exponent (float): The exponent.
+        
+    Returns:
+        float: The result of the calculation.
+    """
 ```
 
 ### Examples
 
-```js
-power(2, 3); // 8 (2^3 = 2 * 2 * 2 = 8)
-power(5, 2); // 25 (5^2 = 5 * 5 = 25)
-power(3, 4); // 81 (3^4 = 3 * 3 * 3 * 3 = 81)
+```python
+power(2, 3) # 8 (2^3 = 2 * 2 * 2 = 8)
+power(5, 2) # 25 (5^2 = 5 * 5 = 25)
+power(3, 4) # 81 (3^4 = 3 * 3 * 3 * 3 = 81)
 ```
 
 ### Constraints
@@ -39,13 +43,11 @@ power(3, 4); // 81 (3^4 = 3 * 3 * 3 * 3 = 81)
   <summary>Click For Solution</summary>
 
 ```js
-function power(base, exponent) {
-  if (exponent === 0) {
-    return 1;
-  } else {
-    return base * power(base, exponent - 1);
-  }
-}
+def power(base: float, exponent: float) -> float:
+    if exponent == 0:
+        return 1
+
+    return base * power(base, exponent - 1)
 ```
 
 ### Explanation
@@ -86,10 +88,13 @@ return 16 * 2 = 32
 
 ### Test Cases
 
-```js
-test('Calculate Power of Base to Exponent', () => {
-  expect(power(2, 3)).toEqual(8);
-  expect(power(5, 2)).toEqual(25);
-  expect(power(3, 4)).toEqual(81);
-});
+```python
+from power import power
+
+
+def test_calculate_power():
+    assert power(2, 3) == 8
+    assert power(5, 2) == 25
+    assert power(3, 4) == 81
+
 ```

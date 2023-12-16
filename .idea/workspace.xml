@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added reverse string recursion solutions in python.">
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added factorial and fibonacci recursion solutions in python.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/05-factorial/factorial-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/05-factorial/factorial_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/05-factorial/factorial.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/05-factorial/factorial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/05-factorial/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/05-factorial/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/06-power/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +54,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in factorial_test.py">
+  <component name="RunManager" selected="Python.Solution">
+    <configuration name="Solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="factorial_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fibonacci_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="power_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,31 +119,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/06-power" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence/fibonacci_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/06-power/power_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for fibonacci_test.test_fibonacci" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/04-fibonacci-sequence" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;fibonacci_test.test_fibonacci&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests in factorial_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -142,27 +146,27 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in reverse_string_recursion_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in power_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/06-power" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/04-recursion/03-reverse-string-recursion/reverse_string_recursion_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/04-recursion/06-power/power_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Solution" />
+        <item itemvalue="Python tests.Python tests in power_test.py" />
+        <item itemvalue="Python.power_run" />
         <item itemvalue="Python tests.Python tests in factorial_test.py" />
         <item itemvalue="Python.factorial_run" />
-        <item itemvalue="Python tests.Python tests for fibonacci_test.test_fibonacci" />
-        <item itemvalue="Python.fibonacci_run" />
-        <item itemvalue="Python tests.Python tests in reverse_string_recursion_test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702346231642</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added factorial and fibonacci recursion solutions in python.">
+      <option name="closed" value="true" />
+      <created>1702608810797</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702608810798</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +329,8 @@
     <MESSAGE value="Added analyze car mileage solutions in python." />
     <MESSAGE value="Added find missing letter refactor solutions in python." />
     <MESSAGE value="Added reverse string recursion solutions in python." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reverse string recursion solutions in python." />
+    <MESSAGE value="Added factorial and fibonacci recursion solutions in python." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added factorial and fibonacci recursion solutions in python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
