@@ -2,21 +2,28 @@
 
 ## Description
 
-Let's practice using recursion by creating a function that calculates the sum of an array of numbers. Write a function called `arraySum` that takes in an array of numbers and returns their sum using recursion.
+Let's practice using recursion by creating a function that calculates the sum of an array of numbers. Write a function called `array_sum` that takes in an array of numbers and returns their sum using recursion.
 
 ## Instructions
 
-Write a function called `arraySum` that takes in an array of numbers and returns their sum using recursion.
+Write a function called `array_sum` that takes in an array of numbers and returns their sum using recursion.
 
 ### Function Signature
 
-```js
-/**
- * Calculates the sum of an array of numbers using recursion.
- * @param {Array} arr - The array of numbers.
- * @returns {number} - The sum of the numbers.
- */
-function arraySum(arr: Array): number;
+```python
+from typing import List
+
+def array_sum(arr: List) -> float:
+    """
+    Calculates the sum of an array of numbers using recursion.
+
+    Parameters:
+        arr (List): The list of numbers.
+
+    Returns:
+        float: The sum of the numbers.
+    """
+    # Function implementation goes here
 ```
 
 ### Constraints
@@ -31,10 +38,10 @@ function arraySum(arr: Array): number;
 
 ### Examples
 
-```js
-arraySum([1, 2, 3, 4, 5]); // should return 15 (1 + 2 + 3 + 4 + 5 = 15)
-arraySum([-1, -2, -3, -4, -5]); // should return -15 (-1 + -2 + -3 + -4 + -5 = -15)
-arraySum([]); // should return 0 (empty array)
+```python
+array_sum([1, 2, 3, 4, 5]) # should return 15 (1 + 2 + 3 + 4 + 5 = 15)
+array_sum([-1, -2, -3, -4, -5]) # should return -15 (-1 + -2 + -3 + -4 + -5 = -15)
+array_sum([]) # should return 0 (empty array)
 ```
 
 ## Solutions
@@ -42,49 +49,38 @@ arraySum([]); // should return 0 (empty array)
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function arraySum(arr) {
-  if (arr.length === 0) {
-    return 0;
-  } else {
-    return arr[0] + arraySum(arr.slice(1));
-  }
-}
+```python
+from typing import List
+
+
+def array_sum(arr: List) -> float:
+    def array_sum_helper(i, arr):
+        if len(arr) - 1 == i:
+            return arr[len(arr) - 1]
+
+        return arr[i] + array_sum_helper(i + 1, arr)
+
+    return 0 if len(arr) == 0 else array_sum_helper(0, arr)
 ```
 
 ### Explanation
 
-- The `arraySum` function uses a recursive approach to calculate the sum of an array of numbers.
-- The base case is when the array is empty. In this case, the function returns 0, as the sum of an empty array is 0.
-- In the recursive case, the function adds the first element of the array (`arr[0]`) to the sum of the rest of the array (`arraySum(arr.slice(1))`).
-- The recursion continues until the array becomes empty and the base case is reached.
-
-Here's a breakdown of how the recursion progresses when calculating the sum of [1, 2, 3, 4, 5]:
-
-- `arraySum([1, 2, 3, 4, 5])` returns 1 + arraySum([2, 3, 4, 5])
-- `arraySum([2, 3, 4, 5])` returns 2 + arraySum([3, 4, 5])
-- `arraySum([3, 4, 5])` returns 3 + arraySum([4, 5])
-- `arraySum([4, 5])` returns 4 + arraySum([5])
-- `arraySum([5])` returns 5 + arraySum([])
-- `arraySum([])` reaches the base case and returns 0
-- At this point, the recursive calls start "unwinding," and the values are added up:
-
-- 5 + 0 = 5 Returned from arraySum([5])
-- 4 + 5 = 9 Returned from arraySum([4, 5])
-- 3 + 9 = 12 Returned from arraySum([3, 4, 5])
-- 2 + 12 = 14 Returned from arraySum([2, 3, 4, 5])
-- 1 + 14 = 15 Returned from arraySum[1, 2, 3, 4, 5]
-
-So, the final result is 15, which is the sum of all the numbers in the original array [1, 2, 3, 4, 5].
+- Use `array_sum_helper` to recursively call the array with an index
+- in the helper call if i is the length of the array return that number
+- return the number at i plus the recursive calls of array sum helper i + 1
 
 </details>
 
 ### Test Cases
 
-```js
-test('Calculate Sum of Array Using Recursion', () => {
-  expect(arraySum([1, 2, 3, 4, 5])).toEqual(15);
-  expect(arraySum([-1, -2, -3, -4, -5])).toEqual(-15);
-  expect(arraySum([])).toEqual(0);
-});
+```python
+from array_sum import array_sum
+
+
+def test_calculate_sum_of_array_using_recursion():
+    assert array_sum([1, 2, 3, 4, 5]) == 15
+    assert array_sum([-1, -2, -3, -4, -5]) == -15
+    assert array_sum([]) == 0
+    assert array_sum([1,2]) == 3
+    assert array_sum([1]) == 1
 ```
