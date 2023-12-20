@@ -2,29 +2,36 @@
 
 ## Instructions
 
-Write a function called `flattenArray` that takes in an array containing nested arrays of integers and returns a new array with all the integers from the nested arrays flattened into a single level.
+Write a function called `flatten_array` that takes in an array containing nested arrays of integers and returns a new array with all the integers from the nested arrays flattened into a single level.
 
 ### Function Signature
 
-```js
-/**
- * Returns a flattened array.
- * @param {number[]} arr - The array containing nested arrays.
- * @returns {number[]} - The flattened array.
- */
-function flattenArray(arr: number[]): number[];
+```python
+from typing import List
+
+def flatten_array(arr: List[int]) -> List[int]:
+    """
+    Returns a flattened list.
+
+    Parameters:
+        arr (List[int]): The list containing nested lists.
+
+    Returns:
+        List[int]: The flattened list.
+    """
+    # Function implementation goes here
 ```
 
 ### Examples
 
-```js
-flattenArray([1, [2, 3], [4, 5, [6]]]); // should return [1, 2, 3, 4, 5, 6]
-flattenArray([
+```python
+flatten_array([1, [2, 3], [4, 5, [6]]]) # should return [1, 2, 3, 4, 5, 6]
+flatten_array([
   [1, 2],
   [3, [4, 5]],
   [6, [7]],
-]); // should return [1, 2, 3, 4, 5, 6, 7]
-flattenArray([1, [2, [3, [4, [5]]]]]); // should return [1, 2, 3, 4, 5]
+]) # should return [1, 2, 3, 4, 5, 6, 7]
+flatten_array([1, [2, [3, [4, [5]]]]]) # should return [1, 2, 3, 4, 5]
 ```
 
 ### Constraints
@@ -42,48 +49,46 @@ flattenArray([1, [2, [3, [4, [5]]]]]); // should return [1, 2, 3, 4, 5]
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function flattenArray(arr) {
-  let result = [];
+```python
+from typing import List
 
-  for (const item of arr) {
-    if (Array.isArray(item)) {
-      result = result.concat(flattenArray(item));
-    } else {
-      result.push(item);
-    }
-  }
 
-  return result;
-}
+def flatten_array(arr: List[int]) -> List[int]:
+    def flatten_array_helper(i, arr, result):
+        if len(arr) == i:
+            return
+
+        if isinstance(arr[i], list):
+            flatten_array_helper(0, arr[i], result)
+        else:
+            result.append(arr[i])
+        flatten_array_helper(i + 1, arr, result)
+
+    result = []
+    flatten_array_helper(0, arr, result)
+    return result
+
 ```
 
 ### Explanation
 
-- Create a variable `result` to store the flattened array.
-- Loop through the input array using a `for...of` loop.
-- If the current element is an array, recursively call the `flattenArray` function on that element to flatten it further, and then concatenate the result to the `result` array.
-- If the current element is not an array, push it to the `result` array.
-- Return the `result` array.
-
-The base case is implicitly handled within the loop structure. As the loop iterates through each element of the input array arr, the recursion eventually reaches the point where there are no more elements left to process.
-
-When the input array arr is empty, the loop will not execute, and the function will directly return the empty result array.
+- use a helper function passing i to iterate thru array
+- if i is the length of the array return
+- if the element at i is a list recursively call the flatten array
+- else append the current element to the result array
+- recursively go to other elements by flatten_array_helper(i + 1, arr, result)
 
 </details>
 
 ### Test Cases
 
-```js
-test('Flatten Nested Arrays', () => {
-  expect(flattenArray([1, [2, 3], [4, 5, [6]]])).toEqual([1, 2, 3, 4, 5, 6]);
-  expect(
-    flattenArray([
-      [1, 2],
-      [3, [4, 5]],
-      [6, [7]],
-    ])
-  ).toEqual([1, 2, 3, 4, 5, 6, 7]);
-  expect(flattenArray([1, [2, [3, [4, [5]]]]])).toEqual([1, 2, 3, 4, 5]);
-});
+```python
+from flatten_array import flatten_array
+
+
+def test_flatten_nested_arrays():
+    assert flatten_array([1, [2, 3], [4, 5, [6]]]) == [1, 2, 3, 4, 5, 6]
+    assert flatten_array([[1, 2], [3, [4, 5]], [6, [7]]]) == [1, 2, 3, 4, 5, 6, 7]
+    assert flatten_array([1, [2, [3, [4, [5]]]]]) == [1, 2, 3, 4, 5]
+
 ```

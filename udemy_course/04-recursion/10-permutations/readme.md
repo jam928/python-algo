@@ -6,20 +6,27 @@ Write a function called `permutations` that takes in a string as a parameter and
 
 ### Function Signature
 
-```js
-/**
- * Returns all possible permutations of the characters in a string.
- * @param {string} str - The string to permute.
- * @returns {string[]} - An array of all possible permutations of the characters in the string.
- */
-function permutations(str: string): string[];
+```python
+from typing import List
+
+def permutations(str_: str) -> List[str]:
+    """
+    Returns all possible permutations of the characters in a string.
+
+    Parameters:
+        str_ (str): The string to permute.
+
+    Returns:
+        List[str]: A list of all possible permutations of the characters in the string.
+    """
+    # Function implementation goes here
 ```
 
 ### Examples
 
-```js
-permutations('abc'); // ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
-permutations('dog'); // ['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']
+```python
+permutations('abc')#  ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
+permutations('dog')#  ['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']
 ```
 
 ### Constraints
@@ -39,27 +46,32 @@ permutations('dog'); // ['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function permutations(str) {
-  const result = [];
+```python
+def permutations(s):
+    # Create a list to store the permutations
+    result = []
 
-  if (str.length === 0) {
-    result.push('');
-    return result;
-  }
+    # If s is an empty string, append an empty string to result and return
+    if len(s) == 0:
+        result.append('')
+        return result
 
-  for (let i = 0; i < str.length; i++) {
-    const firstChar = str[i];
-    const restOfString = str.slice(0, i) + str.slice(i + 1);
-    const subPermutations = permutations(restOfString);
+    # Loop through each character in s
+    for i in range(len(s)):
+        # Get the first character
+        first_char = s[i]
+        # Get the rest of the string
+        rest_of_string = s[:i] + s[i + 1:]
+        # Get the permutations of the rest of the string
+        sub_permutations = permutations(rest_of_string)
 
-    for (let j = 0; j < subPermutations.length; j++) {
-      result.push(firstChar + subPermutations[j]);
-    }
-  }
+        # Loop through each permutation in sub_permutations
+        for j in range(len(sub_permutations)):
+            # Append the first character and the permutation to result
+            result.append(first_char + sub_permutations[j])
 
-  return result;
-}
+    # Return result
+    return result
 ```
 
 ### Explanation
@@ -81,24 +93,12 @@ function permutations(str) {
 
 ### Test Cases
 
-```js
-test('Permutations', () => {
-  expect(permutations('abc')).toEqual([
-    'abc',
-    'acb',
-    'bac',
-    'bca',
-    'cab',
-    'cba',
-  ]);
-  expect(permutations('dog')).toEqual([
-    'dog',
-    'dgo',
-    'odg',
-    'ogd',
-    'gdo',
-    'god',
-  ]);
-  expect(permutations('')).toEqual(['']);
-});
+```python
+from permutations import permutations
+
+
+def test_permutations():
+    assert permutations('abc') == ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
+    assert permutations('dog') == ['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']
+    assert permutations('') == ['']
 ```
