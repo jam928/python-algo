@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added array sum and number range python solutions">
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added flatten array and permutations recursive solutions in python">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten-array-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten_array_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten-array-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten_array_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten-array-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten_array_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten-array.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten_array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations-solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant-time-done.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant_time_done.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant-time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear-time-done.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear_time.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +68,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.permutations_solution">
-    <configuration name="flatten_array_solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.linear_time">
+    <configuration name="constant_time_done" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +77,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten_array_solution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant_time_done.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="linear_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear_time.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,20 +153,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for flatten_array_test.test_flatten_nested_arrays" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;flatten_array_test.test_flatten_nested_arrays&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in permutations_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.linear_time" />
+        <item itemvalue="Python.constant_time_done" />
+        <item itemvalue="Python.permutations_run" />
         <item itemvalue="Python.permutations_solution" />
         <item itemvalue="Python tests.Python tests in permutations_test.py" />
-        <item itemvalue="Python.permutations_run" />
-        <item itemvalue="Python.flatten_array_solution" />
-        <item itemvalue="Python tests.Python tests for flatten_array_test.test_flatten_nested_arrays" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702951295605</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added flatten array and permutations recursive solutions in python">
+      <option name="closed" value="true" />
+      <created>1703039201927</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1703039201927</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +363,8 @@
     <MESSAGE value="Added factorial and fibonacci recursion solutions in python." />
     <MESSAGE value="Added power recursion solutions in python." />
     <MESSAGE value="Added array sum and number range python solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added array sum and number range python solutions" />
+    <MESSAGE value="Added flatten array and permutations recursive solutions in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flatten array and permutations recursive solutions in python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,6 +388,31 @@
           <url>file://$PROJECT_DIR$/udemy_course/04-recursion/09-flatten-array/flatten_array_run.py</url>
           <line>4</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
