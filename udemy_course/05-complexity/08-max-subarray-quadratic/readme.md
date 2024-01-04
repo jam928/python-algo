@@ -34,7 +34,7 @@ print(max_subarray_sum(arr1, k1)) # Output: 24
 
 arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
 k2 = 4;
-print(max_subarray_sum(arr2, k2)); # Output: -9
+print(max_subarray_sum(arr2, k2)) # Output: -9
 ```
 
 ### Constraints

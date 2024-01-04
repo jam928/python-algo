@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added constant time and linear time solutions in python">
+      <change afterPath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear_run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic-time-done.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic-time-done.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/space-complexity.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/space_complexity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic-solution.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max-subarray-linear-run.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max-subarray-linear.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,22 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo/udemy_course/05-complexity/10-max-subarray-linear",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moral\Documents\workspace\python-algo\udemy_course\05-complexity\10-max-subarray-linear" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution">
-    <configuration name="linear_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in max_subarray_linear_test.py">
+    <configuration name="max_subarray_linear" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,11 +78,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear_time.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="logarithmic_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="max_subarray_linear_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,11 +99,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic_time.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,27 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="quadradic_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic_time.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,13 +147,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in max_subarray_linear_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in max_subarray_linear_test.py" />
+        <item itemvalue="Python.max_subarray_linear_run" />
+        <item itemvalue="Python.max_subarray_linear" />
         <item itemvalue="Python tests.Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution" />
         <item itemvalue="Python.max_subarray_quadratic_run" />
-        <item itemvalue="Python.logarithmic_time" />
-        <item itemvalue="Python.quadradic_time" />
-        <item itemvalue="Python.linear_time" />
       </list>
     </recent_temporary>
   </component>

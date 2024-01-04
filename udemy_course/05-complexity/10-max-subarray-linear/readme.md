@@ -2,30 +2,37 @@
 
 ## Instructions
 
-Write a function called `maxSubarraySum` that takes an array of integers and a positive integer `k` as input. The function should find the maximum sum of any subarray of length `k` using an O(n) solution by using the sliding window technique.
+Write a function called `max_subarray_sum` that takes an array of integers and a positive integer `k` as input. The function should find the maximum sum of any subarray of length `k` using an O(n) solution by using the sliding window technique.
 
 ### Function Signature
 
-```javascript
-/**
- * Finds the maximum sum of any subarray of length k in the input array using an O(n^2) solution.
- * @param {number[]} arr - The input array of integers.
- * @param {number} k - The length of the subarray.
- * @returns {number} - The maximum sum of any subarray of length k.
- */
-function maxSubarraySum(arr: number[], k: number): number
+```python
+from typing import List
+
+def max_subarray_sum(arr: List[int], k: int) -> int:
+    """
+    Finds the maximum sum of any subarray of length k in the input array using an O(n) solution.
+
+    Parameters:
+        arr (List[int]): The input list of integers.
+        k (int): The length of the subarray.
+
+    Returns:
+        int: The maximum sum of any subarray of length k.
+    """
+    # Function implementation goes here
 ```
 
 ### Examples
 
-```javascript
-const arr1 = [2, 5, 3, 1, 11, 7, 6, 4];
-const k1 = 3;
-console.log(maxSubarraySum(arr1, k1)); // Output: 24
+```python
+arr1 = [2, 5, 3, 1, 11, 7, 6, 4]
+k1 = 3
+print(max_subarray_sum(arr1, k1)) # Output: 24
 
-const arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
-const k2 = 4;
-console.log(maxSubarraySum(arr2, k2)); // Output: -9
+arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
+k2 = 4;
+print(max_subarray_sum(arr2, k2)) # Output: -9
 ```
 
 ### Constraints
@@ -41,25 +48,21 @@ console.log(maxSubarraySum(arr2, k2)); // Output: -9
 <details>
   <summary>Click For Solution</summary>
 
-```javascript
-function maxSubarraySum(arr, k) {
-  let maxSum = 0;
-  let currentSum = 0;
+```python
+def max_subarray_sum(arr, k):
+    current_sum = 0
+    max_sum = 0
 
-  for (let i = 0; i < k; i++) {
-    maxSum += arr[i];
-  }
+    for i in range(k):
+        max_sum += arr[i]
 
-  currentSum = maxSum;
+    current_sum = max_sum
 
-  for (let i = k; i < arr.length; i++) {
-    currentSum = currentSum - arr[i - k] + arr[i];
-    console.log(`${currentSum} - ${arr[i - k]} + ${arr[i]}`); // Optional
-    maxSum = Math.max(maxSum, currentSum);
-  }
+    for i in range(k, len(arr)):
+        current_sum = current_sum - arr[i-k] + arr[i]
+        max_sum = max(current_sum, max_sum)
 
-  return maxSum;
-}
+    return max_sum
 ```
 
 ### Explanation
@@ -84,18 +87,21 @@ function maxSubarraySum(arr, k) {
 
 ### Test Cases
 
-```javascript
-test('Finding maximum subarray sum using O(n^2) solution', () => {
-  const arr1 = [2, 5, 3, 1, 11, 7, 6, 4];
-  const k1 = 3;
-  expect(maxSubarraySum(arr1, k1)).toBe(24);
+```python
+from max_subarray_linear import max_subarray_sum
 
-  const arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
-  const k2 = 4;
-  expect(maxSubarraySum(arr2, k2)).toBe(-9);
-});
+
+def test_maximum_subarray_using_linear_solution():
+    arr1 = [2, 5, 3, 1, 11, 7, 6, 4]
+    k1 = 3
+    max_subarray_sum(arr1, k1) == 24
+
+    arr2 = [-2, -5, -3, -1, -11, -7, -6, -4]
+    k2 = 4
+    max_subarray_sum(arr2, k2) == -9
 ```
 
 ---
 
-Please note that the provided solution has a time complexity of O(n^2) due to the nested loops.
+- T: O(n)
+- S: O(1)
