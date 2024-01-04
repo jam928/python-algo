@@ -8,26 +8,33 @@ We will re-visit this and use the sliding window technique to use an O(n) soluti
 
 ### Function Signature
 
-```javascript
-/**
- * Finds the maximum sum of any subarray of length k in the input array using an O(n^2) solution.
- * @param {number[]} arr - The input array of integers.
- * @param {number} k - The length of the subarray.
- * @returns {number} - The maximum sum of any subarray of length k.
- */
-function maxSubarraySum(arr: number[], k: number): number
+```python
+from typing import List
+
+def max_subarray_sum(arr: List[int], k: int) -> int:
+    """
+    Finds the maximum sum of any subarray of length k in the input array using an O(n^2) solution.
+
+    Parameters:
+        arr (List[int]): The input list of integers.
+        k (int): The length of the subarray.
+
+    Returns:
+        int: The maximum sum of any subarray of length k.
+    """
+    # Function implementation goes here
 ```
 
 ### Examples
 
-```javascript
-const arr1 = [2, 5, 3, 1, 11, 7, 6, 4];
-const k1 = 3;
-console.log(maxSubarraySum(arr1, k1)); // Output: 24
+```python
+arr1 = [2, 5, 3, 1, 11, 7, 6, 4]
+k1 = 3
+print(max_subarray_sum(arr1, k1)) # Output: 24
 
-const arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
-const k2 = 4;
-console.log(maxSubarraySum(arr2, k2)); // Output: -9
+arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
+k2 = 4;
+print(max_subarray_sum(arr2, k2)); # Output: -9
 ```
 
 ### Constraints
@@ -43,27 +50,23 @@ console.log(maxSubarraySum(arr2, k2)); // Output: -9
 <details>
   <summary>Click For Solution</summary>
 
-```javascript
-function maxSubarraySum(arr, k) {
-  let maxSum = 0;
+```python
+def max_subarray_quadratic(arr, k):
+    max_sum = 0
 
-  for (let i = 0; i <= arr.length - k; i++) {
-    let currentSum = 0;
+    for i in range(len(arr) - k):
+        current_sum = 0
+        for j in range(i, i + k):
+            current_sum += arr[j]
 
-    for (let j = i; j < i + k; j++) {
-      currentSum += arr[j];
-    }
+        max_sum = max(current_sum, max_sum)
 
-    maxSum = Math.max(maxSum, currentSum);
-  }
-
-  return maxSum;
-}
+    return max_sum
 ```
 
 ### Explanation
 
-- The function `maxSubarraySum` uses two nested loops to iterate through all possible subarrays of length `k`.
+- The function `max_subarray_quadratic` uses two nested loops to iterate through all possible subarrays of length `k`.
 - For each subarray, it calculates the sum using a nested loop and keeps track of the maximum sum encountered.
 - Finally, it returns the maximum sum.
 
@@ -71,16 +74,18 @@ function maxSubarraySum(arr, k) {
 
 ### Test Cases
 
-```javascript
-test('Finding maximum subarray sum using O(n^2) solution', () => {
-  const arr1 = [2, 5, 3, 1, 11, 7, 6, 4];
-  const k1 = 3;
-  expect(maxSubarraySum(arr1, k1)).toBe(24);
+```python
+from max_subarray_quadratic import max_subarray_quadratic
 
-  const arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
-  const k2 = 4;
-  expect(maxSubarraySum(arr2, k2)).toBe(-9);
-});
+
+def test_maximum_subarray_using_squared_solution():
+    arr1 = [2, 5, 3, 1, 11, 7, 6, 4]
+    k1 = 3
+    max_subarray_quadratic(arr1, k1) == 24
+
+    arr2 = [-2, -5, -3, -1, -11, -7, -6, -4]
+    k2 = 4
+    max_subarray_quadratic(arr2, k2) == -9
 ```
 
 ---

@@ -20,10 +20,9 @@ Let's take a look at some examples:
 
 ## Constant Space `O(1)`
 
-```js
-function add(num1, num2) {
-  return num1 + num2;
-}
+```python
+def add(num1, num2):
+  return num1 + num2
 ```
 
 The space complexity of this function is `constant`. The function does not create any additional data structures or variables that depend on the input size. It simply returns the result of the addition, so the amount of memory used by the function does not change with the input size.
@@ -32,16 +31,14 @@ We can describe this function as `O(1)` in Big O notation.
 
 ## Linear Space `O(n)`
 
-```js
-function createArray(num) {
-  const arr = [];
-
-  for (let i = 0; i < num; i++) {
-    arr.push(i);
-  }
+```python
+def create_array(num):
+    arr = []
+    
+    for i in range(num):
+        arr.append(i)
 
   return arr;
-}
 ```
 
 The space complexity of the function createArray(num) is `linear`. This is because the function creates an array and pushes elements into it using the for loop. As the input `num` increases, the size of the array also increases proportionally. Therefore, the space complexity of the function grows linearly with the input.
@@ -50,20 +47,17 @@ We can describe this function as `O(n)` in Big O notation.
 
 ## Quadratic Space `O(n^2)`
 
-```js
-function createMatrix(num) {
-  const matrix = [];
-
-  for (let i = 0; i < num; i++) {
-    matrix[i] = [];
-
-    for (let j = 0; j < num; j++) {
-      matrix[i][j] = i + j;
-    }
-  }
-
-  return matrix;
-}
+```python
+def create_matrix(num):
+    matrix = []
+    
+    for i in range(num):
+        matrix[i] = []
+        
+        for j in range(num):
+            matrix[i][j] = i + j
+    
+    return matrix
 ```
 
 The space complexity of the function createMatrix(num) is `quadratic`. This is because the function creates a two-dimensional array and fills it with values using the nested for loops. As the input `num` increases, the size of the matrix also increases proportionally. Therefore, the space complexity of the function grows quadratically with the input.
@@ -72,20 +66,19 @@ We can describe this function as `O(n^2)` in Big O notation.
 
 ## Logarithmic Space `O(log n)`
 
-```js
-function findPower(base, exponent) {
-  if (exponent === 0) {
-    return 1;
-  }
+```python
+def find_power(base, exponent):
+    if exponent == 0:
+        return 1
 
-  if (exponent % 2 === 0) {
-    const halfPower = findPower(base, exponent / 2);
-    return halfPower * halfPower;
-  } else {
-    const halfPower = findPower(base, (exponent - 1) / 2);
-    return base * halfPower * halfPower;
-  }
-}
+    if exponent % 2 == 0:
+        half_power = find_power(base, exponent // 2)
+        result = half_power * half_power
+        return result
+
+    half_power = find_power(base, (exponent - 1) // 2)
+    result = base * half_power * half_power
+    return result
 ```
 
 The space complexity of the function `findPower(base, exponent)` is `logarithmic`. This is because the function uses recursion to calculate the power of a number. As the input `exponent` increases, the number of recursive calls increases logarithmically. Therefore, the space complexity of the function grows logarithmically with the input.
@@ -96,16 +89,14 @@ In these examples, the time and space complexity are the same. However, this is 
 
 ## Constant Time `O(1)` and Linear Space `O(n)`
 
-```js
-function findSum(arr) {
-  let sum = 0;
+```python
+def find_sum(arr):
+    sum = 0
 
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
+    for i in range(len(arr)):
+        sum += arr[i]
 
-  return sum;
-}
+    return sum
 ```
 
 The time complexity of the function `findSum(arr)` is `linear` or `O(n)`, where `n` is the length of the input array `arr`. This is because the function uses a loop to iterate through each element of the array and perform a constant-time operation (adding the element to the sum). The number of iterations is directly proportional to the size of the array.

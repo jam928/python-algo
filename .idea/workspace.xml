@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added flatten array and permutations recursive solutions in python">
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added constant time and linear time solutions in python">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant-time-done.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant_time_done.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant-time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear-time-done.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/04-linear-time-complexity/linear_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic-time-done.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic-time-done.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/space-complexity.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/07-space-complexity/space_complexity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic-run.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic-solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max-subarray-quadratic.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,28 +76,7 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.linear_time">
-    <configuration name="constant_time_done" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/03-constant-time-complexity/constant_time_done.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution">
     <configuration name="linear_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="permutations_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="logarithmic_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,11 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/06-logarithmic-time-complexity/logarithmic_time.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="permutations_solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="max_subarray_quadratic_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,11 +127,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations_solution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,27 +140,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in permutations_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="quadradic_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/05-quadratic-time-complexity/quadradic_time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/04-recursion/10-permutations" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution" />
+        <item itemvalue="Python.max_subarray_quadratic_run" />
+        <item itemvalue="Python.logarithmic_time" />
+        <item itemvalue="Python.quadradic_time" />
         <item itemvalue="Python.linear_time" />
-        <item itemvalue="Python.constant_time_done" />
-        <item itemvalue="Python.permutations_run" />
-        <item itemvalue="Python.permutations_solution" />
-        <item itemvalue="Python tests.Python tests in permutations_test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703039201927</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added constant time and linear time solutions in python">
+      <option name="closed" value="true" />
+      <created>1703642731008</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1703642731008</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +380,8 @@
     <MESSAGE value="Added power recursion solutions in python." />
     <MESSAGE value="Added array sum and number range python solutions" />
     <MESSAGE value="Added flatten array and permutations recursive solutions in python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added flatten array and permutations recursive solutions in python" />
+    <MESSAGE value="Added constant time and linear time solutions in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added constant time and linear time solutions in python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -413,6 +430,11 @@
           <url>file://$PROJECT_DIR$/udemy_course/04-recursion/10-permutations/permutations.py</url>
           <line>3</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_test.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -6,21 +6,20 @@ This behavior is denoted by Big O notation as O(n^2) or "O of n squared", where 
 
 Let's look at an example of a quadratic time O(n^2) function.
 
-```js
-function sumArray(arr) {
-  let sum = 0;
-  let sum2 = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-    for (let j = 0; j < arr.length; j++) {
-      sum2 += arr[j];
-    }
-  }
-  return sum + sum2;
-}
+```python
+def sum_array(arr):
+    sum = 0
+    sum2 = 0
+
+    for i in range(len(arr)):
+        sum += arr[i]
+        for j in range(len(arr)):
+            sum2 += arr[j]
+
+    return sum + sum2
 ```
 
-In the given example, we have a function called `sumArray` that calculates the sum of all elements in an array. However, this implementation exhibits quadratic time complexity (O(n^2)) due to the presence of nested loops.
+In the given example, we have a function called `sum_array` that calculates the sum of all elements in an array. However, this implementation exhibits quadratic time complexity (O(n^2)) due to the presence of nested loops.
 
 The outer loop iterates over each element of the input array once, while the inner loop iterates over the array again for each outer loop iteration. As a result, for every element encountered in the outer loop, the inner loop iterates over the entire array.
 
@@ -36,29 +35,31 @@ So in general, quadratic time complexity is not very efficient. However, there a
 
 You can test the runtime on your machine by running the following code:
 
-```js
-function sumArray(arr) {
-  let sum = 0;
-  let sum2 = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-    for (let j = 0; j < arr.length; j++) {
-      sum2 += arr[j];
-    }
-  }
-  return sum + sum2;
-}
+```python
+import time
 
-const arr1 = [1, 2, 3, 4, 5];
-console.time('Sum Array 1');
-sumArray(arr1);
-console.timeEnd('Sum Array 1');
 
-const arr2 = Array.from({ length: 10000000 }, (_, index) => index + 1);
+def sum_array(arr):
+    sum = 0
+    sum2 = 0
 
-console.time('Sum Array 2');
-sumArray(arr2);
-console.timeEnd('Sum Array 2');
+    for i in range(len(arr)):
+        sum += arr[i]
+        for j in range(len(arr)):
+            sum2 += arr[j]
+
+    return sum + sum2
+
+
+arr1 = [1, 2, 3, 4, 5]
+start = time.time()
+print(sum_array(arr1))
+end = time.time()
+print(f"Sum array1 took: {end - start} ms")
+
+arr2 = list(range(1, 10000))
+start = time.time()
+print(sum_array(arr2))
+end = time.time()
+print(f"Sum array2 took: {end - start} ms")
 ```
-
-You may have to right click in the `Output` in VS Code and select "Stop Code Run" because it will take a long time to run `Sum Array 2`.
