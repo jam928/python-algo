@@ -4,27 +4,34 @@ Anagrams are words or phrases formed by rearranging the letters of another word 
 
 ## Instructions
 
-Write a function called `anagramGrouping` that takes an array of strings as input and returns an array of arrays, where each sub-array contains words that are anagrams of each other.
+Write a function called `anagram_grouping` that takes an array of strings as input and returns an array of arrays, where each sub-array contains words that are anagrams of each other.
 
 ### Function Signature
 
-```js
-/**
- * Returns an array of arrays, where each sub-array contains words that are anagrams of each other.
- * @param {string[]} words - The input array of strings containing words.
- * @returns {string[][]} - The array of arrays with anagram groups.
- */
-function anagramGrouping(words: string[]): string[][];
+```python
+from typing import List
+
+def anagram_grouping(words: List[str]) -> List[List[str]]:
+    """
+    Returns an array of arrays, where each sub-array contains words that are anagrams of each other.
+
+    Parameters:
+    - words (List[str]): The input list of strings containing words.
+
+    Returns:
+    - List[List[str]]: The list of lists with anagram groups.
+    """
+    # Your code here
 ```
 
 ### Examples
 
-```js
-anagramGrouping(['cat', 'act', 'dog', 'god', 'tac']);
-// Output: [['cat', 'act', 'tac'], ['dog', 'god']]
+```python
+anagram_grouping(['cat', 'act', 'dog', 'god', 'tac'])
+# Output: [['cat', 'act', 'tac'], ['dog', 'god']]
 
-anagramGrouping(['listen', 'silent', 'enlist', 'hello', 'world']);
-// Output: [['listen', 'silent', 'enlist'], ['hello'], ['world']]
+anagram_grouping(['listen', 'silent', 'enlist', 'hello', 'world'])
+# Output: [['listen', 'silent', 'enlist'], ['hello'], ['world']]
 ```
 
 ### Constraints
@@ -42,54 +49,42 @@ anagramGrouping(['listen', 'silent', 'enlist', 'hello', 'world']);
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function anagramGrouping(words) {
-  const anagramGroups = new Map();
+```python
+from typing import List
 
-  for (const word of words) {
-    const sortedChars = word.split('').sort().join('');
-    if (anagramGroups.has(sortedChars)) {
-      anagramGroups.get(sortedChars).push(word);
-    } else {
-      anagramGroups.set(sortedChars, [word]);
-    }
-  }
+def anagram_grouping(words: List[str]) -> List[List[str]]:
 
-  return Array.from(anagramGroups.values());
-}
+    anagram_map = {}
+
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        anagrams_list = anagram_map.get(sorted_word, [])
+        anagrams_list.append(word)
+        anagram_map.update({sorted_word: anagrams_list})
+
+    return list(anagram_map.values())
 ```
 
 ### Explanation
 
-- Create a new map `anagramGroups` to store the anagram groups.
-- Iterate through each word in the input array `words`. For each word, split its characters into an array, sort the array in ascending order, and then join the sorted characters back into a string. This sorted string becomes the key for our `anagramGroups` map.
+- Create a new map `anagram_map` to store the anagram groups.
+- Iterate through each word in the input array `words`. For each word, split its characters into an array, sort the array in ascending order, and then join the sorted characters back into a string. This sorted string becomes the key for our `anagram_map` map.
 - Check if the key already exists in the map. If it does, retrieve the corresponding array and add the word to it.
 - If the key does not exist in the map, create a new array with the word as the first element and add it to the map with the key.
-- After processing all the words, extract the arrays of anagram groups from the `anagramGroups` map using `Array.from(anagramGroups.values())` and return them as the final output.
+- After processing all the words, extract the arrays of anagram groups from the `anagram_map` map using `list(anagram_map.values())` and return them as the final output.
 
 </details>
 
 ### Test Cases
 
-```js
-test('Grouping anagrams', () => {
-  const result1 = anagramGrouping(['cat', 'act', 'dog', 'god', 'tac']);
-  const result2 = anagramGrouping([
-    'listen',
-    'silent',
-    'enlist',
-    'hello',
-    'world',
-  ]);
+``` python
+from anagram_grouping import anagram_grouping
 
-  expect(result1).toEqual([
-    ['cat', 'act', 'tac'],
-    ['dog', 'god'],
-  ]);
-  expect(result2).toEqual([
-    ['listen', 'silent', 'enlist'],
-    ['hello'],
-    ['world'],
-  ]);
-});
+def test_anagram_grouping():
+    result1 = anagram_grouping(['cat', 'act', 'dog', 'god', 'tac'])
+    result2 = anagram_grouping(['listen', 'silent', 'enlist', 'hello', 'world'])
+
+    assert result1 == [['cat', 'act', 'tac'], ['dog', 'god']]
+    assert result2 == [['listen', 'silent', 'enlist'], ['hello'], ['world']]
+
 ```

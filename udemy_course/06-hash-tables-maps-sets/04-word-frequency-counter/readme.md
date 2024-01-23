@@ -2,31 +2,37 @@
 
 ## Instructions
 
-Write a function called `wordFrequencyCounter` that takes a string as input and returns a map that represents the frequency of each word in the string. We did a similar challenge way back that counted the occurrences of a character. This function should count the occurrences of each word, ignoring case and excluding punctuation.
+Write a function called `word_frequency_counter` that takes a string as input and returns a map that represents the frequency of each word in the string. We did a similar challenge way back that counted the occurrences of a character. This function should count the occurrences of each word, ignoring case and excluding punctuation.
 
 ### Function Signature
 
-```js
-/**
- * Returns a map that represents the frequency of each word in the input string.
- * @param {string} str - The input string containing words.
- * @returns {Map<string, number>} - The map with word frequency.
- */
-function wordFrequencyCounter(str) {
-  // Your code here
-}
+```python
+from collections import defaultdict
+
+def word_frequency_counter(s):
+    """
+    Returns a dictionary that represents the frequency of each word in the input string.
+    
+    Parameters:
+    - s (str): The input string containing words.
+    
+    Returns:
+    - dict: The dictionary with word frequency.
+    """
+    # Your code here
+
 ```
 
 ### Examples
 
-```js
-wordFrequencyCounter('The quick brown fox jumps over the lazy dog.');
-// Output: Map { 'the' => 2, 'quick' => 1, 'brown' => 1, 'fox' => 1, 'jumps' => 1, 'over' => 1, 'lazy' => 1, 'dog' => 1 }
+```python
+word_frequency_counter('The quick brown fox jumps over the lazy dog.')
+# Output: Map { 'the' => 2, 'quick' => 1, 'brown' => 1, 'fox' => 1, 'jumps' => 1, 'over' => 1, 'lazy' => 1, 'dog' => 1 }
 
-wordFrequencyCounter(
+word_frequency_counter(
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-);
-// Output: Map { 'lorem' => 1, 'ipsum' => 1, 'dolor' => 1, 'sit' => 1, 'amet' => 1, 'consectetur' => 1, 'adipiscing' => 1, 'elit' => 1 }
+)
+# Output: Map { 'lorem' => 1, 'ipsum' => 1, 'dolor' => 1, 'sit' => 1, 'amet' => 1, 'consectetur' => 1, 'adipiscing' => 1, 'elit' => 1 }
 ```
 
 ### Constraints
@@ -44,30 +50,27 @@ wordFrequencyCounter(
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function wordFrequencyCounter(str) {
-  // Convert the string to lowercase and split it into an array of words
-  const words = str.toLowerCase().split(/\W+/);
+```python
+import re
 
-  // Create an empty map to store word frequencies
-  const wordFrequency = new Map();
 
-  // Loop through each word in the array
-  for (const word of words) {
-    // Ignore empty strings (caused by multiple spaces or punctuation marks)
-    if (word === '') continue;
+def word_frequency_counter(s):
+    # Convert the string to lowercase and split it into an array of words
+    words = re.findall(r'\w+', s.lower())
 
-    // If the word is already in the map, increment its frequency
-    if (wordFrequency.has(word)) {
-      wordFrequency.set(word, wordFrequency.get(word) + 1);
-    } else {
-      // If the word is not in the map, add it with a frequency of 1
-      wordFrequency.set(word, 1);
-    }
-  }
+    # Create an empty dictionary to store word frequencies
+    word_frequency = {}
 
-  return wordFrequency;
-}
+    # Loop through each word in the array
+    for word in words:
+        # If the word is already in the dictionary, increment its frequency
+        if word in word_frequency:
+            word_frequency[word] += 1
+        else:
+            # If the word is not in the dictionary, add it with a frequency of 1
+            word_frequency[word] = 1
+
+    return word_frequency
 ```
 
 ### Explanation
@@ -84,31 +87,46 @@ function wordFrequencyCounter(str) {
 
 ### Test Cases
 
-```js
-test('Counting word frequencies in a string', () => {
-  const result1 = wordFrequencyCounter(
-    'The quick brown fox jumps over the lazy dog.'
-  );
-  const result2 = wordFrequencyCounter(
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-  );
+```python
+from word_frequency_counter import word_frequency_counter
 
-  expect(result1.get('the')).toBe(2);
-  expect(result1.get('quick')).toBe(1);
-  expect(result1.get('brown')).toBe(1);
-  expect(result1.get('fox')).toBe(1);
-  expect(result1.get('jumps')).toBe(1);
-  expect(result1.get('over')).toBe(1);
-  expect(result1.get('lazy')).toBe(1);
-  expect(result1.get('dog')).toBe(1);
 
-  expect(result2.get('lorem')).toBe(1);
-  expect(result2.get('ipsum')).toBe(1);
-  expect(result2.get('dolor')).toBe(1);
-  expect(result2.get('sit')).toBe(1);
-  expect(result2.get('amet')).toBe(1);
-  expect(result2.get('consectetur')).toBe(1);
-  expect(result2.get('adipiscing')).toBe(1);
-  expect(result2.get('elit')).toBe(1);
-});
+def test_word_frequency_counter():
+    input_text = "The quick brown fox jumps over the lazy dog. The dog barks, and the fox runs away."
+    expected_output = {
+        'the': 4,
+        'quick': 1,
+        'brown': 1,
+        'fox': 2,
+        'jumps': 1,
+        'over': 1,
+        'lazy': 1,
+        'dog': 2,
+        'barks': 1,
+        'and': 1,
+        'runs': 1,
+        'away': 1,
+    }
+
+    result = word_frequency_counter(input_text)
+    assert result == expected_output
+
+
+def test_word_frequency_counter_empty_input():
+    input_text = ''
+    expected_output = {}
+
+    result = word_frequency_counter(input_text)
+    assert result == expected_output
+
+
+def test_word_frequency_counter_single_word():
+    input_text = 'hello'
+    expected_output = {
+        'hello': 1,
+    }
+
+    result = word_frequency_counter(input_text)
+    assert result == expected_output
+
 ```

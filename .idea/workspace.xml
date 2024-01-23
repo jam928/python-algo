@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added constant time and linear time solutions in python">
-      <change afterPath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear_run.py" afterDir="false" />
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added linear time solutions for max subarray in python">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max-subarray-linear-run.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max-subarray-linear.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo/udemy_course/05-complexity/10-max-subarray-linear",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo/udemy_course/05-complexity/10-max-subarray-linear&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo\udemy_course\05-complexity\10-max-subarray-linear" />
@@ -332,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703642731008</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added linear time solutions for max subarray in python">
+      <option name="closed" value="true" />
+      <created>1704407493136</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1704407493136</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,7 +372,8 @@
     <MESSAGE value="Added array sum and number range python solutions" />
     <MESSAGE value="Added flatten array and permutations recursive solutions in python" />
     <MESSAGE value="Added constant time and linear time solutions in python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added constant time and linear time solutions in python" />
+    <MESSAGE value="Added linear time solutions for max subarray in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added linear time solutions for max subarray in python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
