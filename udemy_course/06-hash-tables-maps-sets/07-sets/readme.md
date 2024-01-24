@@ -6,125 +6,115 @@ Now we are going to move on to `sets`. A set is a collection of unique values. A
 
 To create a set, we use the `new` keyword and the `Set()` constructor. Let's create a set called `nameSet`:
 
-```js
-const nameSet = new Set();
+```python
+nameset = set()
 ```
 
-We can also pass an array to the `Set()` constructor. The values in the array will be added to the set. We can create a set with some values like this:
+We can also pass an array to the `set()` constructor. The values in the array will be added to the set. We can create a set with some values like this:
 
-```js
-const nameSet = new Set(['John', 'Jane', 'Joe']);
+```python
+name_set = set(['John', 'Jane', 'Joe'])
 ```
 
 Let's log the set:
 
-```js
-console.log(nameSet); // Set { 'John', 'Jane', 'Joe' }
+```python
+print(name_set) # { 'John', 'Jane', 'Joe' }
 ```
 
 We can see that the set has three values. Let's create a set with some duplicate values:
 
-```js
-const nameSet = new Set(['John', 'Jane', 'Joe', 'Jane', 'Joe']);
+```python
+name_set = set(['John', 'Jane', 'Joe', 'Jane', 'Joe'])
 ```
 
 Let's log the set:
 
-```js
-console.log(nameSet); // Set { 'John', 'Jane', 'Joe' }
+```python
+print(name_set) # Set { 'John', 'Jane', 'Joe' }
 ```
 
 We can see that even though we added duplicate values to the set, the set does not contain any duplicate values. The set only contains unique values, which can be very useful.
 
 ## Adding Data
 
-To add data to a set, we use the `add()` method. Let's add some values to the `nameSet` set:
+To add data to a set, we use the `add()` method. Let's add some values to the `name_set` set:
 
 ```js
-nameSet.add('Jack');
-nameSet.add('Jill');
+name_set.add('Jack')
+name_set.add('Jill')
 ```
 
 Let's log the set:
 
 ```js
-console.log(nameSet); // Set { 'John', 'Jane', 'Joe', 'Jack', 'Jill' }
+print(name_set); // Set { 'John', 'Jane', 'Joe', 'Jack', 'Jill' }
 ```
 
 ## Check for a Value
 
-To check for a value in a set, we use the `has()` method. Let's check if the set contains the value `'Jack'`:
+To check for a value in a set, just use `if element in set`:
 
-```js
-console.log(nameSet.has('Jack')); // true
+```python
+if 'Jack' in name_set:
+    print("Jack is in nameset")
 ```
 
 ## Deleting Data
 
-To delete data from a set, we use the `delete()` method. Let's delete the value `'Jack'` from the set:
+To delete data from a set, we use the `remove()` method. Let's delete the value `'Jack'` from the set:
 
-```js
-nameSet.delete('Jack');
+```python
+name_set.remove('Jack')
 ```
 
 Let's log the set:
 
-```js
-console.log(nameSet); // Set { 'John', 'Jane', 'Joe', 'Jill' }
+```python
+print(name_set) # Set { 'John', 'Jane', 'Joe', 'Jill' }
 ```
 
 ## Getting the Size of a Set
 
-To get the size of a set, we use the `size` property. Let's log the size of the `nameSet` set:
+To get the size of a set, we use the `len` property. Let's log the size of the `nameSet` set:
 
-```js
-console.log(nameSet.size); // 4
+```python
+print(len(name_set)) # 4
 ```
-
-## Getting All Values from a Set
-
-To get all values from a set, we use the `values()` method. Let's log all values from the `nameSet` set:
-
-```js
-console.log(nameSet.values()); // [Set Iterator] { 'John', 'Jane', 'Joe', 'Jill' }
-```
-
-We can see that the `values()` method returns a set iterator. A set iterator is an object that contains the values from the set. We can use a `for...of` loop to loop through the set iterator and log each value
 
 ## Looping Through a Set
 
 To loop through a set, we can use the `for...of` loop. Let's loop through the `nameSet` set and log each value:
 
-```js
-for (const value of nameSet) {
-  console.log(value);
-}
+```python
+for e in name_set: 
+  print(e)
 ```
 
 ## Converting a Set to an Array
 
-To convert a set to an array, we use the `Array.from()` method. Let's convert the `nameSet` set to an array:
+To convert a set to an array, we use the `list` method. Let's convert the `nameSet` set to an array:
 
-```js
-const nameArray = Array.from(nameSet);
-console.log(nameArray); // [ 'John', 'Jane', 'Joe', 'Jill' ]
+```python
+name_array = list(name_set)
+print(name_array) # [ 'John', 'Jane', 'Joe', 'Jill' ]
 ```
 
 ## Converting an Array to a Set
 
 To convert an array to a set, we use the `Set()` constructor. Let's convert the `nameArray` array to a set:
 
-```js
-const nameSet = new Set(nameArray);
-console.log(nameSet); // Set { 'John', 'Jane', 'Joe', 'Jill' }
+```python
+name_set = set(name_array);
+print(name_set) # Set { 'John', 'Jane', 'Joe', 'Jill' }
 ```
 
 ## Deleting All Data from a Set
 
 To delete all data from a set, we use the `clear()` method. Let's delete all data from the `nameSet` set:
 
-```js
-nameSet.clear();
+```python
+name_set.clear();
 ```
 
 Let's try some challenges using sets.

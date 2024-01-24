@@ -2,34 +2,42 @@
 
 ## Instructions
 
-We'll start with a pretty simple challenge. Write a function called `symmetricDifference` that takes in two arrays and returns an array containing the symmetric difference of the two arrays. The symmetric difference of two arrays is a new array containing only the elements that are present in one of the arrays but not both, with no duplicates.
+We'll start with a pretty simple challenge. Write a function called `symmetric_difference` that takes in two arrays and returns an array containing the symmetric difference of the two arrays. The symmetric difference of two arrays is a new array containing only the elements that are present in one of the arrays but not both, with no duplicates.
 
 ### Function Signature
 
-```js
-/**
- * Returns an array containing the symmetric difference of two arrays.
- * @param {number[]} arr1 - The first array of integers.
- * @param {number[]} arr2 - The second array of integers.
- * @returns {number[]} - The array containing the symmetric difference of the two arrays.
- */
-function symmetricDifference(arr1: number[], arr2: number[]): number[]
+```python
+from typing import List
+
+def symmetric_difference(arr1: List[int], arr2: List[int]) -> List[int]:
+    """
+    Returns a list containing the symmetric difference of two lists.
+    
+    Parameters:
+    - arr1 (List[int]): The first list of integers.
+    - arr2 (List[int]): The second list of integers.
+    
+    Returns:
+    - List[int]: The list containing the symmetric difference of the two lists.
+    """
+    # Your function implementation goes here
+    pass  # Placeholder for function body
 ```
 
 ### Examples
 
-```js
-symmetricDifference([1, 2, 3], [3, 4, 5]);
-// Output: [1, 2, 4, 5]
+```python
+symmetric_difference([1, 2, 3], [3, 4, 5])
+# Output: [1, 2, 4, 5]
 
-symmetricDifference([1, 2, 2, 3, 4], [2, 3, 3, 4, 5]);
-// Output: [1, 5]
+symmetric_difference([1, 2, 2, 3, 4], [2, 3, 3, 4, 5])
+# Output: [1, 5]
 
-symmetricDifference([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]);
-// Output: []
+symmetric_difference([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
+# Output: []
 
-symmetricDifference([1, 2, 3], [4, 5, 6]);
-// Output: [1, 2, 3, 4, 5, 6]
+symmetric_difference([1, 2, 3], [4, 5, 6])
+# Output: [1, 2, 3, 4, 5, 6]
 ```
 
 ### Hints
@@ -43,25 +51,26 @@ symmetricDifference([1, 2, 3], [4, 5, 6]);
   <summary>Click For Solution</summary>
 
 ```js
-function symmetricDifference(arr1, arr2) {
-  const set1 = new Set(arr1);
-  const set2 = new Set(arr2);
-  const result = [];
+from typing import List
 
-  for (const num of arr1) {
-    if (!set2.has(num)) {
-      result.push(num);
-    }
-  }
 
-  for (const num of arr2) {
-    if (!set1.has(num)) {
-      result.push(num);
-    }
-  }
+def symmetric_difference(arr1: List[int], arr2: List[int]) -> List[int]:
+    # Store the elements of arr1 and arr2 in set
+    arr1_set = set(arr1)
+    arr2_set = set(arr2)
 
-  return result;
-}
+    # Iterate thru elements of list1 and list2 and if the element is not in set then add to result array
+    result = []
+
+    for e in arr1:
+        if e not in arr2_set:
+            result.append(e)
+
+    for e in arr2:
+        if e not in arr1_set:
+            result.append(e)
+
+    return result
 ```
 
 ### Explanation
@@ -76,11 +85,12 @@ function symmetricDifference(arr1, arr2) {
 
 ### Test Cases
 
-```js
-test('Symmetric Difference of Two Arrays', () => {
-  expect(symmetricDifference([1, 2, 3], [3, 4, 5])).toEqual([1, 2, 4, 5]);
-  expect(symmetricDifference([1, 2, 2, 3, 4], [2, 3, 3, 4, 5])).toEqual([1, 5]);
-  expect(symmetricDifference([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])).toEqual([]);
-  expect(symmetricDifference([1, 2, 3], [4, 5, 6])).toEqual([1, 2, 3, 4, 5, 6]);
-});
+```python
+from symmetric_difference import symmetric_difference
+
+def test_symmetric_difference():
+    assert symmetric_difference([1, 2, 3], [3, 4, 5]) == [1, 2, 4, 5]
+    assert symmetric_difference([1, 2, 2, 3, 4], [2, 3, 3, 4, 5]) == [1, 5]
+    assert symmetric_difference([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]) == []
+    assert symmetric_difference([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6]
 ```
