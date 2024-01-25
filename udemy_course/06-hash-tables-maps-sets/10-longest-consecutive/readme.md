@@ -2,26 +2,28 @@
 
 ## Instructions
 
-Write a function called `longestConsecutiveSequence` that takes an array of integers as input and returns the length of the longest consecutive sequence of integers in the array.
+Write a function called `longest_consecutive_sequence` that takes an array of integers as input and returns the length of the longest consecutive sequence of integers in the array.
 
 A consecutive sequence is a sequence of consecutive integers, meaning each integer in the sequence is exactly one more than the previous integer.
 
 ### Function Signature
 
-```js
-/**
- * Returns the length of the longest consecutive sequence in the array.
- * @param {number[]} nums - An array of integers.
- * @returns {number} - The length of the longest consecutive sequence.
- */
-function longestConsecutiveSequence(nums: number[]): number
+```python
+def longest_consecutive_sequence(nums):
+    """
+    Returns the length of the longest consecutive sequence in the array.
+    :param nums: List of integers.
+    :return: The length of the longest consecutive sequence.
+    """
+    # Your implementation goes here
+    pass
 ```
 
 ### Examples
 
-```js
-longestConsecutiveSequence([100, 4, 200, 1, 3, 2]); // Output: 4 (The longest consecutive sequence is [1, 2, 3, 4])
-longestConsecutiveSequence([0, 3, 7, 2, 5, 8, 4, 6, 9, 1]); // Output: 10 (The longest consecutive sequence is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+```python
+longest_consecutive_sequence([100, 4, 200, 1, 3, 2]) # Output: 4 (The longest consecutive sequence is [1, 2, 3, 4])
+longest_consecutive_sequence([0, 3, 7, 2, 5, 8, 4, 6, 9, 1]) # Output: 10 (The longest consecutive sequence is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
 ### Constraints
@@ -38,27 +40,32 @@ longestConsecutiveSequence([0, 3, 7, 2, 5, 8, 4, 6, 9, 1]); // Output: 10 (The l
 <details>
   <summary>Click For Solution</summary>
 
-```js
-function longestConsecutiveSequence(nums) {
-  const numSet = new Set(nums);
-  let longestSequence = 0;
+```python
+def longest_consecutive_sequence(nums):
+    # Create new set
+    num_set = set(nums)
+    # Create longest sequence variable
+    longest_sequence = 0
 
-  for (const num of numSet) {
-    if (!numSet.has(num - 1)) {
-      let currentNum = num;
-      let currentSequence = 1;
+    # Loop through set
+    for num in num_set:
+        # If set does not have num - 1, identify the starting element of a potential consecutive sequence.
+        if num - 1 not in num_set:
+            # Create current num and current sequence variables
+            current_num = num
+            current_sequence = 1
 
-      while (numSet.has(currentNum + 1)) {
-        currentNum++;
-        currentSequence++;
-      }
+            # While set has current num + 1, is the next consecutive number in the set?
+            while current_num + 1 in num_set:
+                # Increment current num and current sequence
+                current_num += 1
+                current_sequence += 1
 
-      longestSequence = Math.max(longestSequence, currentSequence);
-    }
-  }
+            # Set longest sequence to the max of longest sequence and current sequence
+            longest_sequence = max(longest_sequence, current_sequence)
 
-  return longestSequence;
-}
+    # Return longest sequence
+    return longest_sequence
 ```
 
 ### Explanation
@@ -75,11 +82,13 @@ function longestConsecutiveSequence(nums) {
 
 ### Test Cases
 
-```js
-test('Longest Consecutive Sequence', () => {
-  expect(longestConsecutiveSequence([100, 4, 200, 1, 3, 2])).toBe(4);
-  expect(longestConsecutiveSequence([0, 3, 7, 2, 5, 8, 4, 6, 9, 1])).toBe(10);
-});
+```python
+from longest_consecutive import longest_consecutive_sequence
+
+
+def test_longest_consecutive_sequence():
+    assert longest_consecutive_sequence([100, 4, 200, 1, 3, 2]) == 4
+    assert longest_consecutive_sequence([0, 3, 7, 2, 5, 8, 4, 6, 9, 1]) == 10
 ```
 
 **Note**: You need to define the `longestConsecutiveSequence` function as shown in the example. The test cases verify that the function correctly returns the length of the longest consecutive sequence in the input array.
