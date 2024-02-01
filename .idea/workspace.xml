@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added linear time solutions for max subarray in python">
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added python solutions for 01/29">
+      <change afterPath="$PROJECT_DIR$/leetcode/stack/daily_temperatures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/stack/evaluate_reverse_polish_notation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/stack/generate_parenthesis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/stack/min_stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/stack/valid_parentheses.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +71,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in max_subarray_linear_test.py">
-    <configuration name="max_subarray_linear" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.daily_temperatures">
+    <configuration name="daily_temperatures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/daily_temperatures.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="max_subarray_linear_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="evaluate_reverse_polish_notation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/evaluate_reverse_polish_notation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="max_subarray_quadratic_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="generate_parenthesis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +122,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/generate_parenthesis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,41 +135,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="min_stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/min_stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in max_subarray_linear_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="valid_parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/udemy_course/05-complexity/10-max-subarray-linear/max_subarray_linear_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/valid_parentheses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in max_subarray_linear_test.py" />
-        <item itemvalue="Python.max_subarray_linear_run" />
-        <item itemvalue="Python.max_subarray_linear" />
-        <item itemvalue="Python tests.Python tests for max_subarray_quadratic_test.test_maximum_subarray_using_squared_solution" />
-        <item itemvalue="Python.max_subarray_quadratic_run" />
+        <item itemvalue="Python.daily_temperatures" />
+        <item itemvalue="Python.generate_parenthesis" />
+        <item itemvalue="Python.evaluate_reverse_polish_notation" />
+        <item itemvalue="Python.min_stack" />
+        <item itemvalue="Python.valid_parentheses" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704407493136</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added python solutions for 01/29">
+      <option name="closed" value="true" />
+      <created>1706580327996</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1706580327996</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,7 +400,8 @@
     <MESSAGE value="Added flatten array and permutations recursive solutions in python" />
     <MESSAGE value="Added constant time and linear time solutions in python" />
     <MESSAGE value="Added linear time solutions for max subarray in python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added linear time solutions for max subarray in python" />
+    <MESSAGE value="Added python solutions for 01/29" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added python solutions for 01/29" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
