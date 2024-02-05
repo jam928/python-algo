@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added python solutions for 01/29">
-      <change afterPath="$PROJECT_DIR$/leetcode/stack/daily_temperatures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/stack/evaluate_reverse_polish_notation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/stack/generate_parenthesis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/stack/min_stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/stack/valid_parentheses.py" afterDir="false" />
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added python solutions for stacks related questions">
+      <change afterPath="$PROJECT_DIR$/leetcode/binary_search/binary_search_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/binary_search/find_min_in_rotated_sorted_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/binary_search/koko_eating_bananas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/binary_search/search_2d_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/binary_search/search_in_rotated_sorted_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/binary_search/time_based_key_value_store.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/linked_list_cycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/list_node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/merge_two_lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/remove_nth_node_from_end_of_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/reorder_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/reverse_linked_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +67,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo/udemy_course/05-complexity/10-max-subarray-linear&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -71,8 +78,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.daily_temperatures">
-    <configuration name="daily_temperatures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.remove_nth_node_from_end_of_list">
+    <configuration name="linked_list_cycle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,11 +87,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/daily_temperatures.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/linked_list_cycle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="evaluate_reverse_polish_notation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="merge_two_lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/evaluate_reverse_polish_notation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/merge_two_lists.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate_parenthesis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="remove_nth_node_from_end_of_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/generate_parenthesis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/remove_nth_node_from_end_of_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="min_stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reorder_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/min_stack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/reorder_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="valid_parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reverse_linked_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,11 +171,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/stack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/stack/valid_parentheses.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/reverse_linked_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.daily_temperatures" />
-        <item itemvalue="Python.generate_parenthesis" />
-        <item itemvalue="Python.evaluate_reverse_polish_notation" />
-        <item itemvalue="Python.min_stack" />
-        <item itemvalue="Python.valid_parentheses" />
+        <item itemvalue="Python.remove_nth_node_from_end_of_list" />
+        <item itemvalue="Python.reorder_list" />
+        <item itemvalue="Python.linked_list_cycle" />
+        <item itemvalue="Python.merge_two_lists" />
+        <item itemvalue="Python.reverse_linked_list" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706580327996</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added python solutions for stacks related questions">
+      <option name="closed" value="true" />
+      <created>1706758124995</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1706758124995</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -401,7 +416,8 @@
     <MESSAGE value="Added constant time and linear time solutions in python" />
     <MESSAGE value="Added linear time solutions for max subarray in python" />
     <MESSAGE value="Added python solutions for 01/29" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added python solutions for 01/29" />
+    <MESSAGE value="Added python solutions for stacks related questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added python solutions for stacks related questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -455,6 +471,11 @@
           <url>file://$PROJECT_DIR$/udemy_course/05-complexity/08-max-subarray-quadratic/max_subarray_quadratic_test.py</url>
           <line>2</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode/linked_list/linked_list_cycle.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
