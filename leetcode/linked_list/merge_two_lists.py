@@ -2,6 +2,7 @@ from typing import Optional
 
 from leetcode.linked_list.list_node import ListNode
 
+
 # https://leetcode.com/problems/merge-two-sorted-lists/
 
 def merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
