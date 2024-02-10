@@ -38,3 +38,18 @@ class TreeNode:
             result.extend(level_list)
 
         return str(result)
+
+
+def list_to_tree(lst):
+    if not lst:
+        return None
+
+    def helper(index):
+        if index < len(lst) and lst[index] is not None:
+            node = TreeNode(lst[index])
+            node.left = helper(2 * index + 1)
+            node.right = helper(2 * index + 2)
+            return node
+        return None
+
+    return helper(0)

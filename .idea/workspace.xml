@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added linked list python solutions">
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/balanced_binary_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/diameter_of_binary_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/invert_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/is_same_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/max_depth_of_bt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/tree_node.py" afterDir="false" />
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added easy binary tree solutions in python">
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/bt_level_order_traversal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/bt_right_side_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/lowest_common_ancestor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/validate_bst.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/trees/tree_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/trees/tree_node.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +71,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.subtree_of_another_tree">
-    <configuration name="balanced_binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.lowest_common_ancestor">
+    <configuration name="bt_level_order_traversal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,7 +84,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/balanced_binary_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/bt_level_order_traversal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="diameter_of_binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="bt_right_side_view" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +105,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/diameter_of_binary_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/bt_right_side_view.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="is_same_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lowest_common_ancestor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,28 +126,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/is_same_tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="max_depth_of_bt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/max_depth_of_bt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/lowest_common_ancestor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,13 +156,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="validate_bst" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/validate_bst.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lowest_common_ancestor" />
+        <item itemvalue="Python.bt_level_order_traversal" />
+        <item itemvalue="Python.bt_right_side_view" />
+        <item itemvalue="Python.validate_bst" />
         <item itemvalue="Python.subtree_of_another_tree" />
-        <item itemvalue="Python.is_same_tree" />
-        <item itemvalue="Python.balanced_binary_tree" />
-        <item itemvalue="Python.diameter_of_binary_tree" />
-        <item itemvalue="Python.max_depth_of_bt" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707361666527</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added easy binary tree solutions in python">
+      <option name="closed" value="true" />
+      <created>1707534526846</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1707534526846</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +411,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Converted the title case challenge into python." />
     <MESSAGE value="Updated title case and added reverse string to python" />
     <MESSAGE value="Added count vowels and remove duplicates solution in python" />
     <MESSAGE value="Added display likes and finding missing number solutions in python" />
@@ -429,7 +435,8 @@
     <MESSAGE value="Added python solutions for stacks related questions" />
     <MESSAGE value="Added binary search and linked list python solutions" />
     <MESSAGE value="Added linked list python solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added linked list python solutions" />
+    <MESSAGE value="Added easy binary tree solutions in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added easy binary tree solutions in python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
