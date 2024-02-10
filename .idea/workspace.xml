@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added binary search and linked list python solutions">
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/Node.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/add_two_numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/copy_random_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/find_the_duplicate_number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/lru_cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/merge_k_sorted_lists.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/linked_list/reverse_k_groups.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/split_lists.py" afterDir="false" />
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added linked list python solutions">
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/balanced_binary_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/diameter_of_binary_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/invert_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/is_same_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/max_depth_of_bt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/trees/tree_node.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/linked_list/merge_two_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/linked_list/merge_two_lists.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,15 +55,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/moral/Documents/workspace/python-algo/udemy_course/05-complexity/10-max-subarray-linear",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moral/Documents/workspace/python-algo/udemy_course/05-complexity/10-max-subarray-linear&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\moral\Documents\workspace\python-algo\udemy_course\05-complexity\10-max-subarray-linear" />
@@ -75,8 +72,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.reverse_k_groups">
-    <configuration name="add_two_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.subtree_of_another_tree">
+    <configuration name="balanced_binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/add_two_numbers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/balanced_binary_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="find_the_duplicate_number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="diameter_of_binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +102,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/find_the_duplicate_number.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/diameter_of_binary_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="merge_k_sorted_lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="is_same_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,11 +123,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/merge_k_sorted_lists.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/is_same_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reverse_k_groups" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="max_depth_of_bt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,11 +144,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/linked_list/reverse_k_groups.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/max_depth_of_bt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="split_lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="subtree_of_another_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,11 +165,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trees" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/split_lists.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trees/subtree_of_another_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.reverse_k_groups" />
-        <item itemvalue="Python.split_lists" />
-        <item itemvalue="Python.merge_k_sorted_lists" />
-        <item itemvalue="Python.find_the_duplicate_number" />
-        <item itemvalue="Python.add_two_numbers" />
+        <item itemvalue="Python.subtree_of_another_tree" />
+        <item itemvalue="Python.is_same_tree" />
+        <item itemvalue="Python.balanced_binary_tree" />
+        <item itemvalue="Python.diameter_of_binary_tree" />
+        <item itemvalue="Python.max_depth_of_bt" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707099294920</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added linked list python solutions">
+      <option name="closed" value="true" />
+      <created>1707361666527</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1707361666527</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,7 +428,8 @@
     <MESSAGE value="Added python solutions for 01/29" />
     <MESSAGE value="Added python solutions for stacks related questions" />
     <MESSAGE value="Added binary search and linked list python solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added binary search and linked list python solutions" />
+    <MESSAGE value="Added linked list python solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added linked list python solutions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
