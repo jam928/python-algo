@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added easy binary tree solutions in python">
-      <change afterPath="$PROJECT_DIR$/leetcode/heaps/design_twitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/heaps/k_closest_points_to_origin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/heaps/kth_largest_element_in_a_stream.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/heaps/kth_largest_element_in_an_array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/heaps/last_stone_weight.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/heaps/task_scheduler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/trees/binary_tree_max_path_sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/combination_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/combination_sum_ii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/palindrome_partitioning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/permutations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/subsets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/subsets_ii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/word_search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +73,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.word_search_ii">
-    <configuration name="k_closest_points_to_origin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.letter_combinations_of_a_phone_number">
+    <configuration name="combination_sum_ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,11 +82,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/heaps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/heaps/k_closest_points_to_origin.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/combination_sum_ii.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="kth_largest_element_in_a_stream" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="letter_combinations_of_a_phone_number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,11 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/heaps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/heaps/kth_largest_element_in_a_stream.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/letter_combinations_of_a_phone_number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="kth_largest_element_in_an_array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="palindrome_partitioning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,11 +124,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/heaps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/heaps/kth_largest_element_in_an_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/palindrome_partitioning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="last_stone_weight" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="permutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,11 +145,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/heaps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/heaps/last_stone_weight.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/permutations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +158,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="word_search_ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="subsets_ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,11 +166,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/trie" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/trie/word_search_ii.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/subsets_ii.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.word_search_ii" />
-        <item itemvalue="Python.kth_largest_element_in_a_stream" />
-        <item itemvalue="Python.last_stone_weight" />
-        <item itemvalue="Python.k_closest_points_to_origin" />
-        <item itemvalue="Python.kth_largest_element_in_an_array" />
+        <item itemvalue="Python.letter_combinations_of_a_phone_number" />
+        <item itemvalue="Python.palindrome_partitioning" />
+        <item itemvalue="Python.combination_sum_ii" />
+        <item itemvalue="Python.subsets_ii" />
+        <item itemvalue="Python.permutations" />
       </list>
     </recent_temporary>
   </component>
