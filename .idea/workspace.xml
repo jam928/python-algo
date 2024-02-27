@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added easy binary tree solutions in python">
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/combination_sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/combination_sum_ii.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/palindrome_partitioning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/permutations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/subsets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/subsets_ii.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/backtracking/word_search.py" afterDir="false" />
+    <list default="true" id="db4bd50a-46d3-48ae-b944-d38e23724340" name="Changes" comment="Added medium backtrack solutions in python">
+      <change afterPath="$PROJECT_DIR$/leetcode/graph/clone_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/graph/max_area_of_island.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/graph/node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/graph/number_of_islands.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +70,8 @@
       <recent name="C:\Users\moral\Documents\workspace\python-algo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.letter_combinations_of_a_phone_number">
-    <configuration name="combination_sum_ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.clone_graph">
+    <configuration name="clone_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +79,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/graph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/combination_sum_ii.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/graph/clone_graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,6 +113,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="max_area_of_island" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/graph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/graph/max_area_of_island.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="number_of_islands" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/graph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/graph/number_of_islands.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="palindrome_partitioning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-algo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,55 +176,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="permutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/permutations.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="subsets_ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python-algo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/backtracking" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/backtracking/subsets_ii.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.clone_graph" />
+        <item itemvalue="Python.max_area_of_island" />
+        <item itemvalue="Python.number_of_islands" />
         <item itemvalue="Python.letter_combinations_of_a_phone_number" />
         <item itemvalue="Python.palindrome_partitioning" />
-        <item itemvalue="Python.combination_sum_ii" />
-        <item itemvalue="Python.subsets_ii" />
-        <item itemvalue="Python.permutations" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707534526846</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added medium backtrack solutions in python">
+      <option name="closed" value="true" />
+      <created>1708744686920</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708744686920</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated title case and added reverse string to python" />
     <MESSAGE value="Added count vowels and remove duplicates solution in python" />
     <MESSAGE value="Added display likes and finding missing number solutions in python" />
     <MESSAGE value="Added are all chars unique solution in python" />
@@ -438,7 +442,8 @@
     <MESSAGE value="Added binary search and linked list python solutions" />
     <MESSAGE value="Added linked list python solutions" />
     <MESSAGE value="Added easy binary tree solutions in python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added easy binary tree solutions in python" />
+    <MESSAGE value="Added medium backtrack solutions in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added medium backtrack solutions in python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
