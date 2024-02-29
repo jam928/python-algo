@@ -14,6 +14,8 @@ def minimal_heaviest_set_A(weights):
 
     for i in range(len(weights) - 1, -1, -1):
         # append weight at i to A and subtract from B
+        if weights[i] in a_weights:
+            continue
         b_weights.remove(weights[i])
         a_weights.appendleft(weights[i])
 
@@ -21,7 +23,7 @@ def minimal_heaviest_set_A(weights):
         a_total_weights += weights[i]
 
         # if the total weights of A greater than B return list of A weights
-        if a_total_weights > b_total_weights:
+        if a_total_weights >= b_total_weights:
             return list(a_weights)
 
     return list(weights)
@@ -36,5 +38,6 @@ print(minimal_heaviest_set_A([-1, -2, -3]))  # [-1]
 print(minimal_heaviest_set_A([3, 2, 6, 5, 7]))  # [6,7]
 print(minimal_heaviest_set_A([5, 10, 6, 6, 2]))  # [6,10]
 print(minimal_heaviest_set_A([2, 3, 2]))  # [2,3]
-print(minimal_heaviest_set_A([2, 3, 2, 3]))  # [3,3]
+print(minimal_heaviest_set_A([2, 3, 2, 3]))  # [2,3]
 print(minimal_heaviest_set_A([18, -3, -2, 19, 2, 0, 15, -9]))  # [18,19]
+print(minimal_heaviest_set_A(weights = [1, 2, 2, 3, 4, 5, 5]))  # [3,4,5]
