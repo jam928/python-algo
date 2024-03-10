@@ -14,6 +14,8 @@ def how_many_swaps(arr):
                 arr[j + 1] = temp
                 swap_count += 1
 
+                print(f"Swapped: {arr}")
+
                 # since you already swapped mark the already sorted flag as false
                 already_sorted = False
 
@@ -23,4 +25,7 @@ def how_many_swaps(arr):
     return swap_count
 
 
-print(f"Swaps: {how_many_swaps([5, 1, 4, 2])}")
+print(f"Swaps: {how_many_swaps([5, 3, 1])}")
+print(f"Swaps: {how_many_swaps([9,10,1,3,2])}")
+arr = [1,2,3,4,5]
+print(arr[-1])
