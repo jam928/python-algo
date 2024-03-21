@@ -1,5 +1,8 @@
 from typing import List
 
+# https://leetcode.com/problems/word-break/
+# T: O(n ^ 3)
+# S: O(n)
 
 def word_break(s: str, word_dict: List[str]) -> bool:
     memo = {}

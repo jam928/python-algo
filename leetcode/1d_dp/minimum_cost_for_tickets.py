@@ -1,5 +1,9 @@
 from typing import List
 
+# T: O(n) where n is the number of days
+# S: O(n) where n is the number of days
+
+# https://leetcode.com/problems/minimum-cost-for-tickets/description/
 
 def min_cost_tickets(days: List[int], costs: List[int]) -> int:
     memo = {}

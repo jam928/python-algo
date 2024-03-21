@@ -3,6 +3,9 @@ from typing import List
 
 # https://leetcode.com/problems/coin-change-ii/
 
+# Time Complexity: O(2^n)
+# Space Complexity: O(amount * len(coins))
+
 def change(amount: int, coins: List[int]) -> int:
     memo = {}
 

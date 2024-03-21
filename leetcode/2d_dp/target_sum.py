@@ -2,6 +2,8 @@ from typing import List
 
 
 # https://leetcode.com/problems/target-sum/
+# Time Complexity: O(len(nums) × sum(nums))
+# Space Complexity: O(len(nums) × sum(nums))
 
 def find_target_sum_ways(nums: List[int], target: int) -> int:
     memo = {}

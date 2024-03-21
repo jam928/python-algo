@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/count-number-of-texts/description/
 
+# T: O(n) # where n is the length of the string
+# S: O(n) # where n is the length of the string
 def count_texts(pressed_keys: str) -> int:
     mod = 1000000007
 
