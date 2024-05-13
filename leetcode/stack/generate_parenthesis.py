@@ -2,8 +2,8 @@ from typing import List
 
 
 # https://leetcode.com/problems/generate-parentheses/description/
-# T: O(4^n / sqrt(n))
-# S: O(4^n / sqrt(n))
+# T: O(2^(2^n))
+# S: O(2n)
 def generate_parenthesis(n: int) -> List[str]:
     result = []
 
@@ -29,3 +29,4 @@ def generate_parenthesis(n: int) -> List[str]:
 print(generate_parenthesis(3))
 print(generate_parenthesis(1))
 print(generate_parenthesis(8))
+print(generate_parenthesis(2))

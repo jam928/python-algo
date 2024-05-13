@@ -8,21 +8,17 @@ from typing import List
 
 def product_except_self(nums: List[int]) -> List[int]:
     n = len(nums)
+    result = [1] * n
 
-    left_products = [1] * n
-    right_products = [1] * n
+    product = 1
+    for i in range(n):
+        result[i] *= product
+        product *= nums[i]
 
-    left_product = 1
-    for i in range(1, n):
-        left_product *= nums[i - 1]
-        left_products[i] = left_product
-
-    right_product = 1
-    for i in range(n - 2, -1, -1):
-        right_product *= nums[i + 1]
-        right_products[i] = right_product
-
-    result = [left_products[i] * right_products[i] for i in range(n)]
+    product = 1
+    for i in range(n - 1, -1, -1):
+        result[i] *= product
+        product *= nums[i]
 
     return result
 

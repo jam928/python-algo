@@ -35,7 +35,7 @@ def two_sum(nums, triplets, i):
             j += 1
             k -= 1
 
-            # avoid duplicates to get unique triplets
+            # avoid duplicates to get unique triplets only when the target sum is zero
             while j < k and nums[j] == nums[j - 1]:
                 j += 1
 
