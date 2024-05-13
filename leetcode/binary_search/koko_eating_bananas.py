@@ -1,6 +1,7 @@
 from math import ceil
 from typing import List
 
+
 # https://leetcode.com/problems/koko-eating-bananas/description/
 
 def min_eating_speed(piles: List[int], h: int) -> int:
