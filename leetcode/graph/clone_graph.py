@@ -6,27 +6,25 @@ from leetcode.graph.node import Node
 
 
 def clone_graph(node: Optional['Node']) -> Optional['Node']:
-    if not node:
-        return node
+    hashmap = {}
 
-    # store visited nodes
-    visited = {}
-    new_node = Node(node.val)
-    visited[node.val] = new_node  # store node.val -> node
+    def dfs(node):
+        if not node:
+            return node
 
-    q = deque()
-    q.append(node)
+        if node.val in hashmap:
+            return hashmap[node.val]
 
-    while len(q) != 0:
-        curr = q.popleft()
-        # iterate though curr neighbors'
-        for neighbor in curr.neighbors:
-            if neighbor.val not in visited:
-                visited[neighbor.val] = Node(neighbor.val)
-                q.append(neighbor)
-            visited[curr.val].neighbors.append(visited[neighbor.val])
+        copy = Node(node.val)
 
-    return new_node
+        hashmap[copy.val] = copy
+
+        for neighbor in node.neighbors:
+            copy.neighbors.append(dfs(neighbor))
+
+        return copy
+
+    return dfs(node)
 
 node1 = Node(1)
 node2 = Node(2)

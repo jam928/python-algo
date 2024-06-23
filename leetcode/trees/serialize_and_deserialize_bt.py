@@ -1,3 +1,5 @@
+from collections import deque
+
 from leetcode.trees.tree_node import TreeNode
 
 
@@ -13,9 +15,9 @@ class Codec:
         # encode the binary tree by , via preorder traveral
         def seralize_helper(root):
             if not root:
-                return "None,"
+                return "X:"
 
-            return f"{root.val},{seralize_helper(root.left)}{seralize_helper(root.right)}"
+            return f"{root.val}:{seralize_helper(root.left)}{seralize_helper(root.right)}"
 
         return seralize_helper(root)
 
@@ -27,18 +29,21 @@ class Codec:
         """
 
         # construct the tree via preorder traversal
-        def deserialize_helper(data_list):
-            val = data_list.pop(0)
-            if val == 'None':
+        def deserialize_helper(q):
+            if len(q) == 0:
+                return None
+            val = q.popleft()
+            if val == 'X':
                 return None
             node = TreeNode(int(val))
-            node.left = deserialize_helper(data_list)
-            node.right = deserialize_helper(data_list)
+            node.left = deserialize_helper(q)
+            node.right = deserialize_helper(q)
 
             return node
 
-        data_list = data.split(',')
-        return deserialize_helper(data_list[:-1])
+        data_list = data.split(':')
+        q = deque(data for data in data_list)
+        return deserialize_helper(q)
 
 if __name__ == '__main__':
     codec = Codec()
@@ -50,4 +55,4 @@ if __name__ == '__main__':
 
     serialized_data = codec.serialize(bt)
     print(f"Serialized data: {serialized_data}")
-    print(codec.deserialize(serialized_data))
+    print(f"Deserialized data: {codec.deserialize(serialized_data)}")
