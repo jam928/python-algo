@@ -1,5 +1,7 @@
 
 # https://leetcode.com/problems/word-search-ii/description/
+# T: O(k * L + (m*n) * 4 ^ L)
+# S: O(k * L + L)
 class TrieNode:
     def __init__(self):
         self.children = {}

@@ -7,39 +7,35 @@ from typing import List
 
 
 def exist(board: List[List[str]], word: str) -> bool:
-    result = [False]
-
-    def validate_word(i, j, index):
-        # return if out of bounds or if its a bad character
-        if i < 0 or i >= len(board) or j < 0 or j >= len(board[i]) or board[i][j] == '#' or index >= len(word) or \
-                board[i][j] != word[index]:
-            return
-
-            # add to result list if the current word equals the word
-        if index == len(word) - 1:
-            result[0] = True
-            return
-
-        # backtrack
-        temp = board[i][j]
-        board[i][j] = '#'
-
-        validate_word(i + 1, j, index + 1)
-        validate_word(i - 1, j, index + 1)
-        validate_word(i, j + 1, index + 1)
-        validate_word(i, j - 1, index + 1)
-
-        board[i][j] = temp
-
-    # iterate through each cell and check if the cell letter matches the first letter in word
     for i in range(len(board)):
-        for j in range(len(board[i])):
-            if board[i][j] == word[0]:
-                validate_word(i, j, 0)
-                if result[0]:
-                    break
+        for j in range(len(board[0])):
+            if board[i][j] == word[0] and verify(i, j, 0, board, word):
+                return True
 
-    return result[0]
+    return False
+
+def verify(i, j, index, board, word):
+    if i < 0 or \
+            i >= len(board) or \
+            j < 0 or \
+            j >= len(board[0]) or \
+            index >= len(word) or \
+            board[i][j] != word[index]:
+        return False
+
+    if index == len(word) - 1 and board[i][j] == word[len(word) - 1]:
+        return True
+
+    result = False
+    temp = board[i][j]
+    board[i][j] = '#'
+    if verify(i - 1, j, index + 1, board, word) or \
+            verify(i + 1, j, index + 1, board, word) or \
+            verify(i, j - 1, index + 1, board, word) or \
+            verify(i, j + 1, index + 1, board, word):
+        result = True
+    board[i][j] = temp
+    return result
 
 print(exist(board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED")) # True
 print(exist(board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE")) # True

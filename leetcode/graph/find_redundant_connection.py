@@ -1,3 +1,4 @@
+from collections import defaultdict
 from typing import List
 
 # T: O(E * V) where e is the number of edges and v number of vertices
@@ -6,25 +7,24 @@ from typing import List
 # https://leetcode.com/problems/redundant-connection/description/
 class FindRedundantConnection:
     def find_redundant_connection(self, edges: List[List[int]]) -> List[int]:
-        parent = [i for i in range(len(edges) + 1)]
+        # Function to perform DFS to check if adding an edge will form a cycle
+        def dfs(source, target):
+            if source in visited:
+                return False
 
-        for edge in edges:
-            if self.__find(parent, edge[0]) == self.__find(parent, edge[1]):
-                return edge
-            else:
-                self.__union(parent, edge[0], edge[1])
+            visited.add(source)
+            if source == target:
+                return True
+            return any(dfs(neighbor, target) for neighbor in graph[source])
 
-        return edges[0]
-
-    def __find(self, parent, v):
-        if parent[v] == v:
-            return parent[v]
-        return self.__find(parent, parent[v])
-
-    def __union(self, parent, u, v):
-        parent1 = self.__find(parent, u)
-        parent2 = self.__find(parent, v)
-        parent[parent2] = parent1
+        # Create a graph as an adjacency list
+        graph = defaultdict(list)
+        for u, v in edges:
+            visited = set()
+            if u in graph and v in graph and dfs(u, v):
+                return [u, v]
+            graph[u].append(v)
+            graph[v].append(u)
 
 
 if __name__ == '__main__':
