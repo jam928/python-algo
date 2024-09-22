@@ -9,8 +9,7 @@ from leetcode.linked_list.list_node import ListNode
 def detect_cycle(head: Optional[ListNode]) -> Optional[ListNode]:
     # use the torq and hare algo
 
-    slow = head
-    fast = head
+    slow = fast = head
     has_cycle = False
     while slow and fast and fast.next:
         slow = slow.next

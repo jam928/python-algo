@@ -1,15 +1,16 @@
+from collections import defaultdict
 from typing import List
 
 # https://leetcode.com/problems/group-anagrams/description/
 
 def group_anagrams(strs: List[str]) -> List[List[str]]:
-    anagram_map = {}
+    anagram_map = defaultdict(list)
 
-    for word in strs:
-        sorted_word = ''.join(sorted(word))
-        anagrams_list = anagram_map.get(sorted_word, [])
-        anagrams_list.append(word)
-        anagram_map.update({sorted_word: anagrams_list})
+    for s in strs:
+        # sort the string to add to map
+        sorted_str = ''.join(sorted(s))
+        # map the sorted str as key and the word as the value
+        anagram_map[sorted_str].append(s)
 
     return list(anagram_map.values())
 

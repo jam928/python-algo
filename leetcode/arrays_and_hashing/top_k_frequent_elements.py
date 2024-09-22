@@ -1,3 +1,4 @@
+from collections import defaultdict
 from typing import List
 
 
@@ -5,10 +6,10 @@ from typing import List
 
 def top_k_frequent(nums: List[int], k: int) -> List[int]:
     # store the freq of each element in a map
-    freq_map = {}
+    freq_map = defaultdict(int)
 
     for num in nums:
-        freq_map.update({num: freq_map.get(num, 0) + 1})
+        freq_map[num] += 1
 
     # sort the freq map values by greatest to least
     sorted_items_by_value = sorted(freq_map.items(), key=lambda x: x[1], reverse=True)
