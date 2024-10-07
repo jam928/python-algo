@@ -7,26 +7,23 @@ from leetcode.trees.tree_node import TreeNode
 
 def is_valid_bst(root: Optional[TreeNode]) -> bool:
     stack = []
-    curr = root
-    highest = float('-inf')
-    while True:
-        # iterate all to the left and appending current node to stack
-        if curr is not None:
-            stack.append(curr)
-            curr = curr.left
-        else:
-            # if stack empty break
-            if not stack:
-                break
-            curr = stack.pop()
-            # if the current val is greater the highest recorded val update highest
-            if curr.val > highest:
-                highest = curr.val
-            else:
-                # return false the current val is less than last node so not valid BST
-                return False
-            curr = curr.right
-    return True
+    result = [True]
+
+    def helper(root):
+        if not root:
+            return
+
+        helper(root.left)
+        if stack:
+            last_value = stack.pop()
+            if last_value >= root.val:
+                result[0] = False
+        stack.append(root.val)
+        helper(root.right)
+
+    helper(root)
+
+    return result[0]
 
 
 bt = TreeNode(2)

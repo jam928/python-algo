@@ -2,6 +2,7 @@ from typing import List
 
 # https://leetcode.com/problems/subarray-sum-equals-k/description/
 
+# prefix count sum in the map
 def subarray_sum(nums: List[int], k: int) -> int:
     count = current_sum = 0
 

@@ -2,20 +2,24 @@ import heapq
 
 class MeetingRooms:
 
-    def min_meeting_rooms(self, intervals):
+    def min_meeting_rooms(self, intervals) -> int:
+        start = sorted([i[0] for i in intervals])
+        end = sorted([i[1] for i in intervals])
 
-        # sort by start time
-        intervals.sort(key=lambda x: x[0])
+        result = count = 0
+        s = e = 0
 
-        # add end time elements in min heap
-        pq = []
+        while s < len(intervals):
+            if start[s] < end[e]:
+                s += 1
+                count += 1
+            else:
+                e += 1
+                count -= 1
 
-        for interval in intervals:
-            if len(pq) != 0 and interval[0] >= pq[0]:
-                heapq.heappop(pq)
-            heapq.heappush(pq, interval[1])
+            result = max(result, count)
 
-        return len(pq)
+        return result
 
     def can_attend_meetings(self, intervals):
 

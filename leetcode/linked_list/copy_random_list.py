@@ -4,7 +4,7 @@ from typing import Optional
 
 # https://leetcode.com/problems/copy-list-with-random-pointer/description/
 
-def copy_random_list(self, head: 'Optional[Node]') -> 'Optional[Node]':
+def copy_random_list(head: 'Optional[Node]') -> 'Optional[Node]':
     cache = {}
 
     # store the old nodes along with the new node val

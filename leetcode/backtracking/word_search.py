@@ -7,35 +7,31 @@ from typing import List
 
 
 def exist(board: List[List[str]], word: str) -> bool:
+    def dfs(i, j, word_index):
+        # if out of bounds
+        # or current word index does not equal the current char in board exit
+        if i < 0 or j < 0 or i >= len(board) or j >= len(board[0]) or word_index >= len(word) or word[word_index] != \
+                board[i][j]:
+            return False
+
+        if word_index == len(word) - 1 and board[i][j] == word[word_index]:
+            return True
+
+        # backtrack and use temp char to avoid going over chars
+        temp = board[i][j]
+        board[i][j] = '#'
+        result = dfs(i + 1, j, word_index + 1) or dfs(i - 1, j, word_index + 1) or dfs(i, j - 1, word_index + 1) or dfs(
+            i, j + 1, word_index + 1)
+        board[i][j] = temp
+
+        return result
+
     for i in range(len(board)):
         for j in range(len(board[0])):
-            if board[i][j] == word[0] and verify(i, j, 0, board, word):
+            if board[i][j] == word[0] and dfs(i, j, 0):
                 return True
 
     return False
-
-def verify(i, j, index, board, word):
-    if i < 0 or \
-            i >= len(board) or \
-            j < 0 or \
-            j >= len(board[0]) or \
-            index >= len(word) or \
-            board[i][j] != word[index]:
-        return False
-
-    if index == len(word) - 1 and board[i][j] == word[len(word) - 1]:
-        return True
-
-    result = False
-    temp = board[i][j]
-    board[i][j] = '#'
-    if verify(i - 1, j, index + 1, board, word) or \
-            verify(i + 1, j, index + 1, board, word) or \
-            verify(i, j - 1, index + 1, board, word) or \
-            verify(i, j + 1, index + 1, board, word):
-        result = True
-    board[i][j] = temp
-    return result
 
 print(exist(board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED")) # True
 print(exist(board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE")) # True
