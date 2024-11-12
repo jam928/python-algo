@@ -2,6 +2,7 @@ import heapq
 
 class MeetingRooms:
 
+    # II
     def min_meeting_rooms(self, intervals) -> int:
         start = sorted([i[0] for i in intervals])
         end = sorted([i[1] for i in intervals])
@@ -21,7 +22,8 @@ class MeetingRooms:
 
         return result
 
-    def can_attend_meetings(self, intervals):
+    # 1
+    def can_attend_meetings(self, intervals) -> bool:
 
         # sort by start time
         intervals.sort(key=lambda x: x[0])

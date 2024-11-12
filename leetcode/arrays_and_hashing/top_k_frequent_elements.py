@@ -1,23 +1,23 @@
-from collections import defaultdict
+from collections import defaultdict, Counter
 from typing import List
 
 
 # https://leetcode.com/problems/top-k-frequent-elements/
 
 def top_k_frequent(nums: List[int], k: int) -> List[int]:
-    # store the freq of each element in a map
-    freq_map = defaultdict(int)
+    freq_map = Counter(nums)
+    freq = [[] for _ in range(len(nums) + 1)] # count as index, list of associated values for that particular index
 
-    for num in nums:
-        freq_map[num] += 1
-
-    # sort the freq map values by greatest to least
-    sorted_items_by_value = sorted(freq_map.items(), key=lambda x: x[1], reverse=True)
+    for num, count in freq_map.items():
+        freq[count].append(num)
 
     result = []
-
-    for i in range(0, k):
-        result.append(sorted_items_by_value[i][0])
+    for i in range(len(freq) - 1, -1, -1):
+        if len(freq[i]) == 0:
+            continue
+        if len(result) == k:
+            break
+        result.extend(freq[i])
 
     return result
 
