@@ -1,7 +1,12 @@
 from typing import List
 
 # https://leetcode.com/problems/find-peak-element/description/
-
+# 1. Binary search on the array
+# 2. At mid point if the left neighbor element in the array is less than the current point
+# 2a. shrink the right window by mid - 1
+# 3. Else if the mid point right neighbor is greater than the current mid point element
+# 3a. shrink the left window by mid + 1
+# 4. else return mid
 def find_peak_element(nums: List[int]) -> int:
     l = 0
     r = len(nums) - 1

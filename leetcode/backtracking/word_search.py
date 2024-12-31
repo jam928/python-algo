@@ -17,14 +17,17 @@ def exist(board: List[List[str]], word: str) -> bool:
         if word_index == len(word) - 1 and board[i][j] == word[word_index]:
             return True
 
-        # backtrack and use temp char to avoid going over chars
         temp = board[i][j]
         board[i][j] = '#'
-        result = dfs(i + 1, j, word_index + 1) or dfs(i - 1, j, word_index + 1) or dfs(i, j - 1, word_index + 1) or dfs(
-            i, j + 1, word_index + 1)
+        moves = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+
+        result = []
+        for dx, dy in moves:
+            result.append(dfs(i + dx, j + dy, word_index + 1))
+
         board[i][j] = temp
 
-        return result
+        return any(result)
 
     for i in range(len(board)):
         for j in range(len(board[0])):

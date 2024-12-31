@@ -4,6 +4,11 @@ from typing import List
 
 # https://leetcode.com/problems/koko-eating-bananas/description/
 
+# # 1. Binary search on the from 1 to max element in the array
+#     # 2. k will be the mid point from left and right element
+#     # 3. calculate the total time by time = ceil(pile/k)
+#     # 4. if total_time <= h update global result var and shrink the right
+#     # 5. else shrink the left
 def min_eating_speed(piles: List[int], h: int) -> int:
     left = 1
     right = max(piles)

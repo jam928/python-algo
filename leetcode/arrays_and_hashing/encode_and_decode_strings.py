@@ -3,26 +3,22 @@ from typing import List
 
 class Codec:
     def encode(self, strs: List[str]) -> str:
-        res = ""
-        for s in strs:
-            res += str(len(s)) + "#" + s
-        return res
+        encoded_parts = [f"{len(s)}?{s}" for s in strs]
+        return ''.join(encoded_parts)
 
     def decode(self, s: str) -> List[str]:
-        res = []
         i = 0
+        decoded = []
 
         while i < len(s):
-            j = i
-            while s[j] != '#':
-                j += 1
-            length = int(s[i:j])
-            i = j + 1
-            j = i + length
-            res.append(s[i:j])
-            i = j
+            # find the seperator ?
+            seperator_idx = s.index('?', i)
+            length = int(s[i:seperator_idx])  # extract the length
+            i = seperator_idx + 1  # move to the start of the string
+            decoded.append(s[i:length + i])  # extract the string
+            i += length  # move past the extracted string
 
-        return res
+        return decoded
 
 # Example usage:
 codec = Codec()

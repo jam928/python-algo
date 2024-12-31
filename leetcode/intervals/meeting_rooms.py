@@ -39,11 +39,12 @@ class MeetingRooms:
 if __name__ == '__main__':
     intervals = [[0,30], [5,10], [15,20]]
 
+    # [0,5,15] [10, 20, 30]
     meeting_rooms = MeetingRooms()
     print(meeting_rooms.can_attend_meetings(intervals)) # False
     print(meeting_rooms.min_meeting_rooms(intervals)) # 2
 
-    intervals2 = [[7,10], [2,4]]
-    print(meeting_rooms.can_attend_meetings(intervals2)) # True
-    print(meeting_rooms.min_meeting_rooms(intervals2)) # 1
+    # intervals2 = [[7,10], [2,4]]
+    # print(meeting_rooms.can_attend_meetings(intervals2)) # True
+    # print(meeting_rooms.min_meeting_rooms(intervals2)) # 1
 
