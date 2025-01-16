@@ -1,35 +1,37 @@
 # https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
 
+# T: O(N)
+# S: O(N)
 def min_remove_to_make_valid(s: str) -> str:
     # convert to list to easily mark the characters to remove at specific index
     l = list(s)
 
-    open_count = close_count = 0
+    # convert string to list to seamless manipulate string
+    arr = list(s)
 
-    for index, c in enumerate(l):
+    # keep track of the open count (
+    open_count = 0
 
-        if c == '(':
+    for i in range(len(arr)):
+        if arr[i] == '(':
             open_count += 1
-        elif c == ')':
-            if open_count > 0:
+        elif arr[i] == ')':
+            # if we have enough open count decrement it
+            if open_count >= 1:
                 open_count -= 1
-            else:
-                l[index] = ""
-            close_count += 1
+            else:  # we don't have enough open so we must make this closing as a ""
+                arr[i] = ""
 
-    # remove the remaining characters from back to front that are left open (
-    if open_count > 0:
-        for i in range(len(l) - 1, -1, -1):
-            if l[i] == '(':
-                l[i] = ""
-                open_count -= 1
+    for i in range(len(arr) - 1, -1, -1):
+        if open_count == 0:
+            break
+        if arr[i] != '(':
+            continue
+        arr[i] = ""
+        open_count -= 1
 
-            if open_count == 0:
-                break
-    # convert list back to string
-    s = "".join(l)
-
-    return s
+    # convert list back to string and return it
+    return ''.join(arr)
 
 if __name__ == '__main__':
     print(min_remove_to_make_valid("lee(t(c)o)de)")) # "lee(t(c)o)de"

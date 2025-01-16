@@ -2,29 +2,30 @@ from typing import List
 
 # https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/
 
+# T: O(MN)
+# S: O(MN)
 def longest_increasing_path(matrix: List[List[int]]) -> int:
-    ROWS, COLS = len(matrix), len(matrix[0])
-    dp = {}  # (r, c) -> LIP
+    dp = {}  # (i, j) -> LIP
 
-    def dfs(r, c, prevVal):
-        if (r < 0 or r == ROWS or c < 0 or
-                c == COLS or matrix[r][c] <= prevVal
-        ):
+    def dfs(i, j, prev_val):
+        if (i < 0 or i >= len(matrix) or j < 0 or j >= len(matrix[0]) or matrix[i][j] <= prev_val):
             return 0
-        if (r, c) in dp:
-            return dp[(r, c)]
+
+        if (i, j) in dp:
+            return dp[(i, j)]
 
         res = 1
-        res = max(res, 1 + dfs(r + 1, c, matrix[r][c]))
-        res = max(res, 1 + dfs(r - 1, c, matrix[r][c]))
-        res = max(res, 1 + dfs(r, c + 1, matrix[r][c]))
-        res = max(res, 1 + dfs(r, c - 1, matrix[r][c]))
-        dp[(r, c)] = res
+        moves = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+
+        for dx, dy in moves:
+            res = max(res, 1 + dfs(i + dx, j + dy, matrix[i][j]))
+
+        dp[(i, j)] = res
         return res
 
-    for r in range(ROWS):
-        for c in range(COLS):
-            dfs(r, c, -1)
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            dfs(i, j, -1)
     return max(dp.values())
 
 if __name__ == '__main__':

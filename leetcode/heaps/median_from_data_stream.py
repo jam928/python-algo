@@ -6,29 +6,31 @@ class MedianFinder:
 
     def __init__(self):
         # maxHeap to store the smaller half of the numbers
-        self.maxHeap = []  # maxHeap is implemented as a minHeap with negated values
+        self.max_heap = []  # maxHeap is implemented as a minHeap with negated values
         # minHeap to store the larger half of the numbers
-        self.minHeap = []  # minHeap is a regular min-heap
+        self.min_heap = []  # minHeap is a regular min-heap
 
     # T: O(logn)
     # S: O(n)
     def add_num(self, num: int):
         # Add to minHeap first, then move the smallest value to maxHeap
-        heapq.heappush(self.minHeap, num)
-        heapq.heappush(self.maxHeap, -heapq.heappop(self.minHeap))
+        heapq.heappush(self.min_heap, num)
+        heapq.heappush(self.max_heap, -heapq.heappop(self.min_heap))
 
         # Balance the heaps if maxHeap has more elements than minHeap
-        if len(self.maxHeap) > len(self.minHeap):
-            heapq.heappush(self.minHeap, -heapq.heappop(self.maxHeap))
+        if len(self.max_heap) > len(self.min_heap):
+            heapq.heappush(self.min_heap, -heapq.heappop(self.max_heap))
 
     # T: O(1)
     # S: O(n) (no additional space is required beyond the heaps)
     def find_median(self) -> float:
-        if len(self.minHeap) > len(self.maxHeap):
-            return float(self.minHeap[0])
-        else:
-            return (self.minHeap[0] - self.maxHeap[0]) / 2.0
+        # if the length of the min heap is greater than the max heap
+        # return the first element in the min heap
+        if len(self.min_heap) > len(self.max_heap):
+            return float(self.min_heap[0])
 
+        # return the difference of both heaps
+        return (self.min_heap[0] - self.max_heap[0]) / 2.0
 
 if __name__ == '__main__':
     median_finder = MedianFinder()
