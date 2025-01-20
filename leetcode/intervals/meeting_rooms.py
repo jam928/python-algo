@@ -3,24 +3,23 @@ import heapq
 class MeetingRooms:
 
     # II
+    # T: O(N LOG N)
+    # S: O(N)
     def min_meeting_rooms(self, intervals) -> int:
-        start = sorted([i[0] for i in intervals])
-        end = sorted([i[1] for i in intervals])
+        intervals.sort(key=lambda x: x[0])
+        pq = []
 
-        result = count = 0
-        s = e = 0
+        min_meeting_rooms = float('-inf')
 
-        while s < len(intervals):
-            if start[s] < end[e]:
-                s += 1
-                count += 1
-            else:
-                e += 1
-                count -= 1
+        for interval in intervals:
+            # pop out elements in q such that the current start time is gte the min time of pq
+            while pq and interval[0] >= pq[0]:
+                heapq.heappop(pq)
 
-            result = max(result, count)
+            heapq.heappush(pq, interval[1])
+            min_meeting_rooms = max(min_meeting_rooms, len(pq))
 
-        return result
+        return min_meeting_rooms
 
     # 1
     def can_attend_meetings(self, intervals) -> bool:
@@ -44,7 +43,7 @@ if __name__ == '__main__':
     print(meeting_rooms.can_attend_meetings(intervals)) # False
     print(meeting_rooms.min_meeting_rooms(intervals)) # 2
 
-    # intervals2 = [[7,10], [2,4]]
-    # print(meeting_rooms.can_attend_meetings(intervals2)) # True
-    # print(meeting_rooms.min_meeting_rooms(intervals2)) # 1
+    intervals2 = [[7,10], [2,4]]
+    print(meeting_rooms.can_attend_meetings(intervals2)) # True
+    print(meeting_rooms.min_meeting_rooms(intervals2)) # 1
 
