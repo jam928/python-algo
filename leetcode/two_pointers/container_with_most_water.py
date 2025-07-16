@@ -1,25 +1,31 @@
 from typing import List
 
 # https://leetcode.com/problems/container-with-most-water/
+# T: O(N)
+# S: O(1)
 
-def max_area(height: List[int]) -> int:
-    max_water = 0
-    left, right = 0, len(height) - 1
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        max_water = 0
+        left, right = 0, len(height) - 1
 
-    while left < right:
-        # Calculate the height, width, and area of the current given left & right ptrs
-        h = min(height[left], height[right])
-        w = right - left
-        max_water = max(max_water, h * w)
+        while left < right:
+            # Calculate the height, width, and area of the current given left & right ptrs
+            h = min(height[left], height[right])
+            w = right - left
+            max_water = max(max_water, h * w)
 
-        # move the pointers accordingly
-        if height[left] < height[right]:
-            left += 1
-        else:
-            right -= 1
+            # move the pointers accordingly
+            if height[left] < height[right]:
+                left += 1
+            else:
+                right -= 1
 
-    return max_water
+        return max_water
 
-height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
-result = max_area(height)
-print(result)
+if __name__ == '__main__':
+    s = Solution()
+    height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+    assert s.maxArea(height) == 49
+    height = [1, 1]
+    assert s.maxArea(height) == 1

@@ -1,25 +1,29 @@
+import heapq
 from collections import defaultdict, Counter
 from typing import List
 
 
 # https://leetcode.com/problems/top-k-frequent-elements/
+# T: O(N LOG N)
+# S: O(N)
 
-def top_k_frequent(nums: List[int], k: int) -> List[int]:
-    freq_map = Counter(nums)
-    freq = [[] for _ in range(len(nums) + 1)] # count as index, list of associated values for that particular index
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        result = []
 
-    for num, count in freq_map.items():
-        freq[count].append(num)
+        freq_map = Counter(nums)
 
-    result = []
-    for i in range(len(freq) - 1, -1, -1):
-        if len(freq[i]) == 0:
-            continue
-        if len(result) == k:
-            break
-        result.extend(freq[i])
+        pq = []
 
-    return result
+        for key, value in freq_map.items():
+            heapq.heappush(pq, (-value, key))
 
-print(top_k_frequent([1,1,1,2,2,3], 2)) # [1,2]
-print(top_k_frequent([1], 1)) # [1]
+        while len(result) < k and pq:
+            result.append(heapq.heappop(pq)[1])
+
+        return result
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.topKFrequent([1,1,1,2,2,3], 2)) # [1,2]
+    print(s.topKFrequent([1], 1)) # [1]
