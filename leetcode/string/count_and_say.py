@@ -25,6 +25,5 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.countAndSay(4)) # 1211
-
-    print(s.countAndSay(1)) # 1
+    assert s.countAndSay(4) == "1211"
+    assert s.countAndSay(1) == "1"

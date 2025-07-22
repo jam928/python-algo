@@ -1,3 +1,7 @@
+# https://leetcode.com/problems/zigzag-conversion/
+# T: O(N)
+# S: O(N)
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows == 1 or len(s) <= numRows:
@@ -27,12 +31,12 @@ if __name__ == '__main__':
 
     s = "PAYPALISHIRING"
     numRows = 3
-    print(Solution().convert(s, numRows)) # PAHNAPLSIIGYIR
+    assert Solution().convert(s, numRows) == "PAHNAPLSIIGYIR"
 
     s = "PAYPALISHIRING"
     numRows = 4
-    print(Solution().convert(s, numRows))  # PINALSIGYAHRPI
+    assert Solution().convert(s, numRows) == "PINALSIGYAHRPI"
 
     s = "A"
     numRows = 1
-    print(Solution().convert(s, numRows)) # A
+    assert Solution().convert(s, numRows) == "A"

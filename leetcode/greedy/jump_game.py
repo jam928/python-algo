@@ -4,15 +4,23 @@ from typing import List
 # T: O(N)
 # S: O(1)
 
-def can_jump(nums: List[int]) -> bool:
-    goal = len(nums) - 1
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        i = 0
+        j = nums[0]
 
-    for i in range(len(nums) - 1, -1, -1):
-        if i + nums[i] >= goal:
-            goal = i
+        n = len(nums) - 1
 
-    return True if goal == 0 else False
+        while i <= j:
+            if j >= n:
+                return True
 
+            j = max(j, nums[i] + i)
+            i += 1
 
-print(can_jump([2, 3, 1, 1, 4]))  # True
-print(can_jump([3, 2, 1, 0, 4]))  # False
+        return False
+
+if __name__ == '__main__':
+    s = Solution()
+    assert s.canJump([2, 3, 1, 1, 4]) == True
+    assert s.canJump([3, 2, 1, 0, 4]) == False

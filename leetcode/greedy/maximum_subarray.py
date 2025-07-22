@@ -4,18 +4,19 @@ from typing import List
 # T: O(N)
 # S: O(1)
 
-def max_sub_array(nums: List[int]) -> int:
-    current_sum = 0
-    max_sum = float('-inf')
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        current_sum = float('-inf')
+        largest_sum = float('-inf')
 
-    for num in nums:
-        # update current sum by the current number or current number plus the current sum
-        current_sum = max(num, num + current_sum)
-        # update max sum
-        max_sum = max(max_sum, current_sum)
+        for i in range(len(nums)):
+            current_sum = max(nums[i], current_sum + nums[i])
+            largest_sum = max(largest_sum, current_sum)
 
-    return nums[0] if len(nums) == 1 else max_sum
+        return largest_sum
 
-print(max_sub_array(nums = [-2,1,-3,4,-1,2,1,-5,4])) # 6
-print(max_sub_array([1])) # 1
-print(max_sub_array([5,4,-1,7,8])) # 23
+if __name__ == '__main__':
+    s = Solution()
+    assert s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]) == 6
+    assert s.maxSubArray([1]) == 1
+    assert s.maxSubArray([5,4,-1,7,8]) == 23
