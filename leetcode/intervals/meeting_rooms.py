@@ -1,11 +1,13 @@
 import heapq
 
+# https://leetcode.com/problems/meeting-rooms-ii/
+
 class MeetingRooms:
 
     # II
     # T: O(N LOG N)
     # S: O(N)
-    def min_meeting_rooms(self, intervals) -> int:
+    def minMeetingRooms(self, intervals) -> int:
         intervals.sort(key=lambda x: x[0])
         pq = []
 
@@ -22,7 +24,7 @@ class MeetingRooms:
         return min_meeting_rooms
 
     # 1
-    def can_attend_meetings(self, intervals) -> bool:
+    def canAttendMeetings(self, intervals) -> bool:
 
         # sort by start time
         intervals.sort(key=lambda x: x[0])
@@ -36,14 +38,13 @@ class MeetingRooms:
 
 
 if __name__ == '__main__':
-    intervals = [[0,30], [5,10], [15,20]]
+    meetingRooms = MeetingRooms()
 
-    # [0,5,15] [10, 20, 30]
-    meeting_rooms = MeetingRooms()
-    print(meeting_rooms.can_attend_meetings(intervals)) # False
-    print(meeting_rooms.min_meeting_rooms(intervals)) # 2
+    intervals = [[0,30], [5,10], [15,20]]
+    assert meetingRooms.canAttendMeetings(intervals) == False
+    assert meetingRooms.minMeetingRooms(intervals) == 2
 
     intervals2 = [[7,10], [2,4]]
-    print(meeting_rooms.can_attend_meetings(intervals2)) # True
-    print(meeting_rooms.min_meeting_rooms(intervals2)) # 1
+    assert meetingRooms.canAttendMeetings(intervals2) == True
+    assert meetingRooms.minMeetingRooms(intervals2) == 1
 

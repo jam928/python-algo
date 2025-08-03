@@ -1,7 +1,10 @@
+import bisect
 import random
 from typing import List
 
 # https://leetcode.com/problems/random-pick-with-weight/
+# T: O(logN)
+# S: O(N)
 
 class Solution:
 
@@ -15,24 +18,8 @@ class Solution:
 
     def pickIndex(self) -> int:
         target = random.randint(1, self.pre_sum[-1])  # get a random number b/t 1 and len of pre_sum
-        result = self.binary_search(target)  # find the closest index with that target
+        result = bisect.bisect_left(self.pre_sum, target)  # find the closest index with that target
         return result
-
-    def binary_search(self, target):
-
-        i = 0
-        j = len(self.pre_sum) - 1
-
-        while i <= j:
-
-            mid = (i + j) // 2
-
-            if self.pre_sum[mid] < target:
-                i = mid + 1
-            else:
-                j = mid - 1
-
-        return j if i >= len(self.pre_sum) else i
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(w)

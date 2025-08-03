@@ -1,8 +1,9 @@
-
-# https://leetcode.com/problems/basic-calculator/description/
-# https://leetcode.com/problems/basic-calculator-ii/
 class BasicCalculator:
-    def calculate_I(self, s: str) -> int:
+
+    # https://leetcode.com/problems/basic-calculator/description/
+    # T: O(N)
+    # S: O(N)
+    def calculateI(self, s: str) -> int:
         # keep track of the sign
         sign = 1
 
@@ -43,7 +44,10 @@ class BasicCalculator:
 
         return total_sum
 
-    def calculate_II(self, s: str) -> int:
+    # T: O(N)
+    # S: O(1)
+    # https://leetcode.com/problems/basic-calculator-ii/description/
+    def calculateII(self, s: str) -> int:
         multiply_division = -1
         sign = 1
         prev = total_sum = 0
@@ -84,8 +88,10 @@ class BasicCalculator:
         total_sum += sign * prev
         return total_sum
 
-    # https://leetcode.ca/2018-01-10-772-Basic-Calculator-III/
-    def calculate_III(self, s: str) -> int:
+    # https://leetcode.com/problems/basic-calculator-iii/description/
+    # T: O(N)
+    # S: O(N)
+    def calculateIII(self, s: str) -> int:
         if not s:
             return 0
 
@@ -151,16 +157,17 @@ class BasicCalculator:
         return num_stack[-1]
 
 if __name__ == '__main__':
-    basic_calculator = BasicCalculator()
-    arr = ["3+2*2", " 3/2 ", " 3+5 / 2 "]
-    for i in arr:
-        print(basic_calculator.calculate_II(i)) # 7,1,5
+    basicCalculator = BasicCalculator()
 
-    print('\n')
-    arr2 = ["1 + 1", " 2-1 + 2 ", "(1+(4+5+2)-3)+(6+8)"] # 2, 3, 23
-    for i in arr2:
-        print(basic_calculator.calculate_I(i))
+    assert basicCalculator.calculateI("1 + 1") == 2
+    assert basicCalculator.calculateI(" 2-1 + 2 ") == 3
+    assert basicCalculator.calculateI("(1+(4+5+2)-3)+(6+8)") == 23
 
-    arr3 = ["1 + 1", " 6-4 / 2 ", "2*(5+5*2)/3+(6/2+8)", "(2+6* 3+5- (3*14/7+2)*5)+3"] # 2, 4, 21, -12
-    for i in arr3:
-        print(basic_calculator.calculate_III(i))
+    assert basicCalculator.calculateII("3+2*2") == 7
+    assert basicCalculator.calculateII(" 3/2 ") == 1
+    assert basicCalculator.calculateII(" 3+5 / 2 ") == 5                    
+
+    assert basicCalculator.calculateIII("1+1") == 2
+    assert basicCalculator.calculateIII("6-4/2") == 4
+    assert basicCalculator.calculateIII("2*(5+5*2)/3+(6/2+8)") == 21
+
